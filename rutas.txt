@@ -1,0 +1,20 @@
+RUTAS PRA PROYECTO LARAVEL GESCCOL 
+-home 
+-quienes-somos 
+-tramites-y-servicios
+-tramite
+-noticas
+-noticia
+-atencion al ciudadano
+-contactanos 
+-glosario-de-terminos 
+-preguntas-frecuentes
+-normativas
+
+
+migraciones db 
+-entradas => 
+-categorias
+-tramites 
+-imagenes 
+
