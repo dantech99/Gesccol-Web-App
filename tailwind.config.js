@@ -6,15 +6,20 @@ module.exports = {
         './vendor/laravel/jetstream/**/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+        
     ],
 
     theme: {
         extend: {
-            fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+
+            spacing: {
+                '36': '9rem',
+                '35': '220px',
             },
+           
         },
     },
+   
 
-    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+
 };
