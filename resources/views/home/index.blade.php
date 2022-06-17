@@ -1,6 +1,6 @@
 @extends('layouts.template')
 
-@section('title', 'Inicio | Gesccol')
+@section('title', 'Inicio | Gestion Catastral De Colombia')
 
 @section('content')
 
@@ -31,7 +31,7 @@
 {{-- enlaces de interes  --}}
 <div class="container m-auto py-8">
     <div class="grid grid-cols-2  md:grid-cols-4">
-        <a href="">
+        <a href="{{Route('servicios.index')}}">
             <div class="w-full  h-auto m-1 flex flex-col p-9 ">
                 <div class="rounded-full w-auto p-4 m-auto bg-white border-4 border-blue-600">
                     <ion-icon name="filing" class="interes"></ion-icon>
@@ -40,7 +40,7 @@
             </div>
         </a>
 
-        <a href="">
+        <a href="{{Route('home.glossary')}}">
             <div class="w-full  h-auto m-1 flex flex-col p-9 ">
                 <div class="rounded-full w-auto p-4 m-auto bg-white border-4 border-blue-600">
                     <ion-icon name="journal" class="interes"></ion-icon>
@@ -48,7 +48,7 @@
                 <h1 class="m-auto mt-2 text-lg">Glosario de terminos</h1>
             </div>
         </a>
-        <a href="">
+        <a href="{{Route('home.questions')}}">
             <div class="w-full  h-auto m-1 flex flex-col p-9 ">
                 <div class="rounded-full w-auto p-4 m-auto bg-white border-4 border-blue-600">
                     <ion-icon name="help-circle" class="interes"></ion-icon>
@@ -56,7 +56,7 @@
                 <h1 class="m-auto mt-2 text-lg">Preguntas Frecuentes</h1>
             </div>
         </a>
-        <a href="">
+        <a href="{{Route('home.regulations')}}">
             <div class="w-full  h-auto m-1 flex flex-col p-9 ">
                 <div class="rounded-full w-auto p-4 m-auto bg-white border-4 border-blue-600">
                     <ion-icon name="warning" class="interes"></ion-icon>

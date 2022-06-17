@@ -8,7 +8,7 @@
 {{-- contendor del logo empresarial --}}
 <div class="grid grid-cols-6 h-32 m-auto">
    <div class="container flex align-items-center p-4 col-span-4">
-      <a href="" class="my-auto ml-5">
+      <a href="/" class="my-auto ml-5">
          <img src="images/logo-gesccol.png" alt="" class=" w-80">
       </a>
    </div>
