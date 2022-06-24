@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -12,9 +13,12 @@ class HomeController extends Controller
     public function index(){
 
         $posts = Post::latest('id')->paginate(3);
+        
 
         return view('home.index', compact('posts'));
     }
+
+  
 
 
     //metodo quienes somos

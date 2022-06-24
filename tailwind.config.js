@@ -6,20 +6,26 @@ module.exports = {
         './vendor/laravel/jetstream/**/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
-        
+
     ],
 
     theme: {
         extend: {
-
             spacing: {
                 '36': '9rem',
                 '35': '220px',
             },
-           
+
         },
+        colors: {
+            primary: 'var(--color-primary)',
+            secondary: 'var(--color-secondary)',
+            third: 'var(--color-third)',
+            btn: 'var(--color-btn)',
+
+        }
     },
-   
+
 
 
 };

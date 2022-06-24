@@ -79,30 +79,20 @@
     </div>
 
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3 h-auto py-6">
+        @foreach ($posts as $post)
+        
        <article class="shadow-2xl">
             <div class="w-full">
                 <img src="images/banner-notice.jpeg" alt="" class="w-full">
             </div>
             <div class="w-full p-3 text-[#2299AA] text-xl font-medium hover:underline">
-                <a href=""><h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, excepturi.</h1></a>
+                <a href="{{route('posts.show', $post)}}"><h1>{{$post->title}}</h1></a>
             </div>
        </article>
-       <article class="shadow-2xl">
-            <div class="w-full">
-                <img src="images/banner-notice.jpeg" alt="" class="w-full">
-            </div>
-            <div class="w-full p-3 text-[#2299AA] text-xl font-medium hover:underline">
-                <a href="shadow-2xl"><h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, excepturi.</h1></a>
-            </div>
-        </article>
-        <article class="shadow-2xl">
-            <div class="w-full">
-                <img src="images/banner-notice.jpeg" alt="" class="w-full">
-            </div>
-            <div class="w-full p-3 text-[#2299AA] text-xl font-medium hover:underline">
-                <a href=""><h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, excepturi.</h1></a>
-            </div>
-        </article>
+       @endforeach
+    </div>
+    <div class="container w-full my-5 text-center">
+        <a href="{{Route('posts.index')}}" class="m-auto text-xl font-bold text-[#2299AA]">Ver Mas...</a>
     </div>
 </section>
 

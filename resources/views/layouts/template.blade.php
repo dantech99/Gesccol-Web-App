@@ -8,7 +8,7 @@
     
 
       <!-- Styles -->
-      <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+      <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
       <link rel="shortcut icon" href="images/logo-gesccol.png" type="image/x-icon">
 
@@ -31,14 +31,20 @@
         .interes{
           font-size: 100px;
         }
+
+        .boton{
+          background: #3366CC !important;
+        }
       </style>
+
+  <script src="{{ asset('js/app.js') }}" defer></script>
 
 </head>
 <body>
     {{-- header --}}
-   @include('layouts.partials.header')
+    @include('layouts.partials.header')
 
-   {{-- navigation --}}
+     {{-- navigation --}}
 
      @include('layouts.partials.navigation')
 

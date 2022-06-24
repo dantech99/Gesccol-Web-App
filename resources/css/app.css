@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    :root {
+        /* colores para los links y titulos */
+        --color-primary: #2299AA;
+
+        /* color para los botones en general */
+        --color-btn: #4F81BD;
+
+        /* color para los subtitulos, y texto en general */
+        --color-secondary: #000000;
+        
+        /* barras y desplegables  */
+        --color-third: #BED3F9;
+
+    }
+}

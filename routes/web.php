@@ -51,10 +51,10 @@ Route::controller(PostController::class)->group(function() {
     Route::get('posts', 'index')->name('posts.index');
 
     //ruta para ver una entrada
-    Route::get('posts/{posts:slug}', 'show')->name('posts.show');
+    Route::get('posts/{post:slug}', 'show')->name('posts.show');
 
     //ruta para ver los posts por categoria
-    Route::get('categoria/{categoria:slug}', 'category')->name('posts.categoria');
+    Route::get('category/{category:slug}', 'category')->name('posts.categoria');
 });
 
 

@@ -2,48 +2,41 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
+
+
 class PostController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+  
     public function index()
     {
         $posts = Post::latest('id')->paginate(20);
-
-        return view('posts.index', compact('posts'));
+        $categorias = Category::all();
+        return view('posts.index', compact('posts', 'categorias'));
     }
 
- 
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function show(Post $post)
     {
-        $relations = Post::where('category_id',
-        $post->category_id)
+        $similares = Post::where('category_id', $post->category_id)
         ->where('id', '!=', $post->id)
         ->latest('id')
-        ->take(4)
+        ->take(3)
         ->get();
         
-        return view('posts.show', compact('post', 'relations'));
+        return view('posts.show', compact('post', 'similares'));
     }
 
 
-    public function category(Category $category)
+    public function category(category $category)
     {
-        return view('posts.categorias');
+        $posts = Post::where('category_id', $category->id)
+        ->latest('id')
+        ->paginate(4);
+        return view('posts.categorias', compact('posts', 'category'));
     }
 
 
