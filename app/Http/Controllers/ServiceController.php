@@ -10,14 +10,14 @@ class ServiceController extends Controller
     
     public function index()
     {
-        $service = Service::latest('id')->paginate(20);
+        $services = Service::latest('id')->paginate(10);
         
-        return view('servicios.index');
+        return view('servicios.index', compact('services'));
     }
 
-    public function show($id)
+    public function show(Service $service)
     {
-        return view('servicios.show');
+        return view('servicios.show', compact('service'));
     }
 
  

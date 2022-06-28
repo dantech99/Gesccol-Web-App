@@ -81,7 +81,7 @@
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3 h-auto py-6">
         @foreach ($posts as $post)
         
-       <article class="shadow-2xl">
+       <article class="shadow-2xl h-80">
             <div class="w-full">
                 <img src="images/banner-notice.jpeg" alt="" class="w-full">
             </div>

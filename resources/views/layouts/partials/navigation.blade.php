@@ -3,29 +3,24 @@
       <div class="flex items-center justify-center">
           <div class="flex">
               <div class="hidden xl:flex md:mr-8 xl:mr-16">
-                  <a href="/" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-lg leading-5 text-[#2299AA] hover:bg-gray-100  focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                  <a href="/" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-lg leading-5 text-[#2299AA] hover:bg-gray-100   focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                       Inicio
                   </a>
                   <a href="{{Route('home.somos')}}" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-lg leading-5 text-[#2299AA]  hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
-                    
-                     ¿Quienes Somos?
+                    <p class="{{request()->routeIs('home.somos') ? 'active' : ''}}"> ¿Quienes Somos?</p>
                   </a>
                   <a href="{{Route('servicios.index')}}" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-lg leading-5 text-[#2299AA] hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                       
-                     Tramites y Servicios
+                      <p class="{{request()->routeIs('servicios.index') ? 'active' : ''}}">Tramites y Servicios</p>
                   </a>
                   <a href="{{Route('posts.index')}}" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-lg leading-5 text-[#2299AA] hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                       
-                      Noticias
+                     <p class="{{request()->routeIs('posts.index') ? 'active' : ''}}"> Noticias y Comunicados</p>
                   </a>
-                  <a href="{{Route('posts.index')}}" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-lg leading-5 text-[#2299AA] hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
-                      
-                    Comunicados
-                </a>
 
                   <a href="{{Route('home.atencion')}}" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-lg leading-5 text-[#2299AA]  hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                       
-                    Atencion al Ciudadano
+                   <p class="{{request()->routeIs('home.atencion') ? 'active' : ''}}"> Atencion al Ciudadano</p>
                 </a>
               </div>
           </div>

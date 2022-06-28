@@ -1,10 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Post;
 use Illuminate\Http\Request;
-
+use App\Models\Category;
 
 
 class PostController extends Controller
@@ -12,9 +11,8 @@ class PostController extends Controller
   
     public function index()
     {
-        $posts = Post::latest('id')->paginate(20);
-        $categorias = Category::all();
-        return view('posts.index', compact('posts', 'categorias'));
+        $posts = Post::latest('id')->paginate(9);
+        return view('posts.index', compact('posts'));
     }
 
 

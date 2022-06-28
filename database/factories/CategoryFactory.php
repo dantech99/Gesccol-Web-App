@@ -16,10 +16,10 @@ class CategoryFactory extends Factory
      */
     public function definition()
     {
-        $nombre = $this->faker->unique()->word(20);
+        $name = $this->faker->unique()->word(20);
         return [
-            'nombre' => $nombre,
-            'slug' => Str::slug($nombre)
+            'name' => $name,
+            'slug' => Str::slug($name)
         ];
     }
 }

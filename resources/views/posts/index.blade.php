@@ -1,6 +1,6 @@
 @extends('layouts.template')
 
-@section('title', 'Tramites Y Servicios | Gesccol')
+@section('title', 'Noticias Y Comunicados | Gesccol')
     
 @section('content')
 <header class="container-xl">
@@ -11,25 +11,17 @@
 
 {{-- seccion de categorias  --}}
 
-<section class="container m-auto text-center">
-        <h1 class=" text-3xl my-6">Categorias</h1>
-        <div class="flex flex-row flex-wrap justify-center w-auto">
-            @foreach ($categorias as $category)
-           <a href="{{route('posts.categoria', $category)}}" class="p-4  block  w-35 mx-2 my-2 rounded-md bg-gray-200 text-center hover:bg-btn">{{$category->nombre}}</a>
-           @endforeach
-        </div>
-
-</section>
+<x-categories/>
 
 {{-- seccion de noticias  --}}
 <section class="container m-auto">
     <div class="container w-full my-5">
-        <h1 class="m-auto text-2xl font-bold text-[#2299AA]">Noticias</h1>
+        <h1 class="m-auto text-2xl font-bold text-[#2299AA]">Noticias Comunicados  e Informes</h1>
     </div>
 
-    <div class="grid grid-cols-1 gap-6 md:grid-cols-3 h-auto py-6">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-3 h-auto py-6 px-5 md:px-0">
         @foreach ($posts as $post)
-        <article class="shadow-2xl">
+        <article class="h-80">
                 <div class="w-full">
                     <img src="images/banner-notice.jpeg" alt="" class="w-full">
                 </div>
@@ -38,8 +30,11 @@
                 </div>
         </article>
        @endforeach
-   
-        
+  
     </div>
+    <div class=" mt-6 px-6 py-6 flex justify-center container m-auto ">
+        {{$posts->links()}}
+    </div>
+
 </section>
 @endsection

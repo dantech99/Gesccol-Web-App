@@ -68,7 +68,7 @@ Route::controller(ServiceController::class)->group(function(){
     Route::get('servicios', 'index')->name('servicios.index');
 
     //ruta para ver un servicio
-    Route::get('servicios/{servicio}', 'show')->name('servicios.show');
+    Route::get('servicios/{service:slug}', 'show')->name('servicios.show');
 });
 
 

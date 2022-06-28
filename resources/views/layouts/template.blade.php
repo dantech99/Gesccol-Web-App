@@ -35,6 +35,10 @@
         .boton{
           background: #3366CC !important;
         }
+
+        .active{
+          color: #0137a3 !important;
+        }
       </style>
 
   <script src="{{ asset('js/app.js') }}" defer></script>
