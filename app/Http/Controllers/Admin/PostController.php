@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Category;
+use App\Models\Post;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -24,7 +27,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        $categorias = Category::pluck('name', 'id');
+       return view('admin.posts.create', compact('categorias'));
     }
 
     /**
@@ -35,7 +39,16 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $post = Post::create($request->all());
+
+        if ($request->file('file')) {
+            $url = Storage::put('posts', $request->file('file'));
+
+            $post->image()->create([
+                'url' => $url]);
+        }
+
+        return redirect()->route('admin.posts.edit', compact('post'));
     }
 
     /**
@@ -44,7 +57,7 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Post $post)
     {
         //
     }
@@ -55,9 +68,9 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Post $post)
     {
-        //
+        return view('admin.posts.edit');
     }
 
     /**
@@ -67,7 +80,7 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $post)
     {
         //
     }
@@ -78,8 +91,9 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Post $post)
     {
-        //
+        $post->delete();
+        return redirect()->route('admin.posts.index')->with('info', 'entrada eliminada con exito');
     }
 }

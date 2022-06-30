@@ -3,11 +3,25 @@
 @section('title', 'Noticias | Gesccol')
 
 @section('content_header')
-    <h1>Noticias</h1>
+
+    <a href="{{route('admin.posts.create')}}" class="btn btn-secondary float-right">Nueva Entrada</a>
+
+    <h1>Listado de Noticias, Comunicados e Informes</h1>
 @stop
 
 @section('content')
-    <p class="container">Welcome to this beautiful admin panel.</p>
+
+
+    <hr class="pt-5">
+    
+    @if (session('info'))
+        <x-adminlte-alert theme="success" title="Listo!!" dismissable>
+            <strong>{{session('info')}}</strong>
+        </x-adminlte-alert>
+    @endif
+
+@livewire('admin.post-list')
+
 @stop
 
 @section('css')

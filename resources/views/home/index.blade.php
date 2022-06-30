@@ -81,13 +81,24 @@
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3 h-auto py-6">
         @foreach ($posts as $post)
         
-       <article class="shadow-2xl h-80">
-            <div class="w-full">
-                <img src="images/banner-notice.jpeg" alt="" class="w-full">
+       <article class="h-96 max-h-96">
+            <div class="w-full h-60 overflow-hidden">
+                @if ($post->image)
+                    <img src="{{Storage::url($post->image->url)}}" alt="" class="h-full w-full object-cover">
+                    @else
+                    <img src="images/banner-notice.jpeg" alt="" class="w-full h-full object-cover">
+                @endif
             </div>
-            <div class="w-full p-3 text-[#2299AA] text-xl font-medium hover:underline">
+              
+                
+            <div class="w-full p-3 text-[#2299AA] text-2xl font-medium hover:underline">
                 <a href="{{route('posts.show', $post)}}"><h1>{{$post->title}}</h1></a>
             </div>
+            
+            <div class="p-3 text-xl">
+                {!!Str::limit($post->content, 250)!!}
+            </div>
+            <p class="p-3 text-gray-500">Publicado por: {{$post->author}}</p>
        </article>
        @endforeach
     </div>

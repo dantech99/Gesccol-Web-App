@@ -316,7 +316,7 @@ return [
         [
             'text' => 'Crear Noticia',
             'icon' => 'fas fa-book-medical',
-            'url' => '#',
+            'route' => 'admin.posts.create',
         ],
 
         ['header' => 'SERVICIOS'],

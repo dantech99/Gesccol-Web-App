@@ -21,11 +21,16 @@
 
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3 h-auto py-6 px-5 md:px-0">
         @foreach ($posts as $post)
-        <article class="h-80">
-                <div class="w-full">
-                    <img src="images/banner-notice.jpeg" alt="" class="w-full">
+        <article class="h-96 max-h-96 ">
+                <div class="w-full h-60 overflow-hidden">
+                    @if ($post->image)
+                        <img src="{{Storage::url($post->image->url)}}" alt="" c class="h-full w-full object-cover">
+                    @else
+                     <img src="images/banner-notice.jpeg" alt=""  class="h-full w-full object-cover">
+                    @endif
+                   
                 </div>
-                <div class="w-full p-3 text-[#2299AA] text-xl font-medium hover:underline">
+                <div class="w-full p-3 text-[#2299AA] text-2xl font-medium hover:underline">
                     <a href="{{route('posts.show', $post)}}"><h1>{{$post->title}}</h1></a>
                 </div>
         </article>

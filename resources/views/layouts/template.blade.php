@@ -39,6 +39,10 @@
         .active{
           color: #0137a3 !important;
         }
+
+        .img-post{
+          
+        }
       </style>
 
   <script src="{{ asset('js/app.js') }}" defer></script>
