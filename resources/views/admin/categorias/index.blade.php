@@ -61,7 +61,7 @@
         </main>
         @else
         <div class="card-body">
-            <strong class="p-3">No hay registros</strong>
+            <strong class="p-3">No hay registros para mostrar</strong>
         </div>
          @endif
     </section>
