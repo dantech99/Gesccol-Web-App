@@ -37,6 +37,7 @@
           color: #3366CC;
         }
 
+
         .interes{
           font-size: 100px;
         }
@@ -58,6 +59,7 @@
             {{-- navigation --}}
 
             @include('layouts.partials.navigation')
+
                     
 
             

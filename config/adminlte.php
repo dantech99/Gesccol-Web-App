@@ -188,7 +188,7 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'home',
+    'dashboard_url' => '/',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => 'register',
@@ -250,7 +250,7 @@ return [
         ['header' => 'ADMINISTRACION'],
         [
             'text' => 'Inicio',
-            'url'  => 'admin/settings',
+            'route'  => 'admin.home',
             'icon' => 'fas fa-home',
         ],
        
@@ -294,22 +294,23 @@ return [
         // ],
         ['header' => 'CATEGORIAS'],
         [
-            'text'       => 'Crear Categorias',
-            'url'        => '#',
-            'icon' => 'fas fa-tag',
-        ],
-        [
-            'text'       => 'Listado Categorias',
-            'url'        => '#',
+            'text'   => 'Listado Categorias',
+            'route' => 'admin.categorias.index',
             'icon' => 'fas fa-tags',
         ],
+        [
+            'text'       => 'Crear Categorias',
+            'route'        => 'admin.categorias.create',
+            'icon' => 'fas fa-tag',
+        ],
+        
 
 
         ['header' => 'NOTICIAS/COMUNICADOS'],
         [
             'text' => 'Lista de Noticias',
             'icon' => 'fas fa-book',
-            'url' => '#',
+            'route' => 'admin.posts.index',
         ],
 
         [
@@ -322,7 +323,7 @@ return [
         [
             'text' => 'Lista de Servicios',
             'icon' => 'fas fa-book-open',
-            'url' => '',
+            'route' => 'admin.servicios.index',
         ],
         [
             'text' => 'Crear Servicio',

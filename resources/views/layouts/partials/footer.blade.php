@@ -30,6 +30,6 @@
          @auth 
          <a href="{{route('admin.home')}}" class="text-white">administracion</a>   
          @else 
-         <a href="{{route('login')}}" class="text-white">login</a> @endauth
+         <a href="{{route('login')}}" class="text-white h-5 w-5 bg-blue-900"></a> @endauth
     </div>
 </footer>
