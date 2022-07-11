@@ -328,8 +328,20 @@ return [
         [
             'text' => 'Crear Servicio',
             'icon' => 'fas fa-book-open',
-            'url' => '#',
+            'route' => 'admin.servicios.create',
         ],
+         ['header' => 'CONTRATOS'],
+        [
+            'text' => 'Lista de contratos',
+            'icon' => 'fas fa-book-open',
+            'route' => 'admin.contratos.index',
+        ],
+        [
+            'text' => 'Crear Contrato',
+            'icon' => 'fas fa-book-open',
+            'route' => 'admin.contratos.create',
+        ],
+
 
         
     ],

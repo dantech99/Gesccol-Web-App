@@ -30,7 +30,7 @@
 
 {{-- enlaces de interes  --}}
 <div class="container m-auto py-8">
-    <div class="grid grid-cols-2  md:grid-cols-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4">
         <a href="{{Route('servicios.index')}}">
             <div class="w-full  h-auto m-1 flex flex-col p-9 ">
                 <div class="rounded-full w-auto p-4 m-auto bg-white border-4 border-blue-600">
@@ -73,15 +73,14 @@
 
 
 {{-- seccion de noticias  --}}
-<section class="container m-auto">
+<section class="container m-auto relative py-10 md:px-0 px-2">
     <div class="container w-full my-5">
         <h1 class="m-auto text-4xl font-bold text-[#2299AA] text-center">Ultimas Noticias e Informes</h1>
     </div>
 
-    <div class="grid grid-cols-1 gap-6 md:grid-cols-3 h-auto py-6">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-3 py-6 h-full">
         @foreach ($posts as $post)
-        
-       <article class="h-96 max-h-96">
+       <article class=" ">
             <div class="w-full h-60 overflow-hidden">
                 @if ($post->image)
                     <img src="{{Storage::url($post->image->url)}}" alt="" class="h-full w-full object-cover">
@@ -89,27 +88,25 @@
                     <img src="images/banner-notice.jpeg" alt="" class="w-full h-full object-cover">
                 @endif
             </div>
-              
-                
             <div class="w-full p-3 text-[#2299AA] text-2xl font-medium hover:underline">
                 <a href="{{route('posts.show', $post)}}"><h1>{{$post->title}}</h1></a>
             </div>
-            
-            <div class="p-3 text-xl">
-                {!!Str::limit($post->content, 250)!!}
+            <div class="p-3 ">
+                {!!Str::limit($post->content, 200)!!}
             </div>
             <p class="p-3 text-gray-500">Publicado por: {{$post->author}}</p>
        </article>
        @endforeach
     </div>
+
     <div class="container w-full my-5 text-center">
         <a href="{{Route('posts.index')}}" class="m-auto text-xl font-bold text-[#2299AA]">Ver Mas...</a>
     </div>
 </section>
 
 
-{{-- newletter  --}}
-<div class=" container-xl bg-[#ECF2FF] my-10 h-auto">
+{{-- Contrataciones  --}}
+{{-- <div class=" container-xl bg-[#ECF2FF] my-10 h-auto">
     <div class="container h-64">
         <div class="m-auto min-w-full h-full  text-center p-10">
             <h1 class="m-auto text-center my-10 text-2xl">Suscribete para recibir mas informacion</h1>
@@ -119,6 +116,7 @@
             </form>
         </div>
     </div>
-</div>
+</div> --}}
+
 @endsection
 

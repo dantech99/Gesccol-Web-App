@@ -23,6 +23,11 @@
                       
                     Atencion al Ciudadano
                 </a>
+
+                  <a href="javascript: void(0)" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-xl leading-5 text-[#2299AA]  hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                      
+                    Contrataciones
+                </a>
               </div>
           </div>
       </div>
@@ -92,6 +97,15 @@
                                 <div class="text-gray-800 pt-10">
                                     <div class="flex items-center">
                                         <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">Inicio</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                          <li>
+                            <a class="cursor-pointer">
+                                <div class="text-gray-800 pt-10">
+                                    <div class="flex items-center">
+                                        <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">Contrataciones</p>
                                     </div>
                                 </div>
                             </a>

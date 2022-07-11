@@ -10,7 +10,7 @@
       <!-- Styles -->
       <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
-      <link rel="shortcut icon" href="images/logo-gesccol.png" type="image/x-icon">
+      <link rel="shortcut icon" href="{{asset('images/logo-gesccol.png')}}" type="image/x-icon">
 
       {{-- iconos  --}}
       <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
@@ -20,6 +20,9 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
       <script src="https://cdn.tailwindcss.com"></script>
+
+      {{-- sweetalert --}}
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
       {{-- styles  --}}
       <style>
@@ -37,7 +40,11 @@
         }
 
         .active{
-          color: #0137a3 !important;
+          color: #000 !important;
+
+        }
+        .active:hover{
+          color: white !important;
         }
 
         .img-post{

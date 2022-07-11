@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Noticias | Gesccol')
+@section('title', 'Administracion | crear publicacion')
 
 @section('content_header')
 

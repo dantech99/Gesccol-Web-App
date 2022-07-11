@@ -6,14 +6,14 @@
 
 <header>
     <x-header-bar>
-        <h1 class="text-4xl text-white m-auto text-center font-semibold">¿Quienes Somos?</h1>
+        <h1 class=" text-5xl font-bold text-[#2299AA] m-auto text-center">¿Quienes Somos?</h1>
     </x-header-bar>
 </header>
 
 <section class="container m-auto h-auto my-10">
     <div class="grid md:grid-cols-4 grid-cols-1 gap-6">
         {{-- layout-seccion principal --}}
-        <div class="container w-full col-span-3">
+        <div class="container w-full col-span-4">
             <div class="flex bg-blue-700 h-10">
                 <h1 class="m-auto ml-5 text-white text-xl font-medium">Quienes Somos</h1>
             </div>
@@ -23,14 +23,15 @@
         </div>
 
         {{-- layout-aside  --}}
-        <aside class="w-full  border border-gray-300 p-5">
-            {{-- <div class="grid grid-flow-row gap-y-6">
+        {{-- <aside class="w-full  border border-gray-300 p-5">
+            <div class="grid grid-flow-row gap-y-6">
                 <div class="container  bg-gray-500 h-full w-full">1</div>
                 <div class="container  bg-gray-500 h-full w-full">1</div>
                 <div class="container  bg-gray-500 h-full w-full">1</div>
-            </div> --}}
-        </aside>
+            </div>
+        </aside> --}}
     </div>
 </section>
+
 
 @endsection

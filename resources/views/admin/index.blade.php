@@ -3,6 +3,7 @@
 @section('title', 'Administracion | Gesccol')
 
 @section('content_header')
+
     <h1>Administracion Gesccol</h1>
 @stop
 

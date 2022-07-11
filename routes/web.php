@@ -4,7 +4,9 @@ use App\Http\Controllers\AdditionalController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ContractController;
 use Illuminate\Support\Facades\Route;
+use App\Mail\ContactanosMailable;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,8 +32,8 @@ Route::controller(HomeController::class)->group(function () {
     //atencion al ciudadano
     Route::get('atencion-al-ciudadano', 'attention')->name('home.atencion');
 
-    //formulario de contacto y datos de contacto
-    Route::get('contactanos', 'contact')->name('home.contact');
+    //atencion al ciudadano
+    Route::post('contactanos', 'store')->name('home.store');
 
     //glosario de terminos claves
     Route::get('glosario', 'glossary')->name('home.glossary');
@@ -43,6 +45,14 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('normativas', 'regulations')->name('home.regulations');
 
 });
+
+// ruta para las vistas de contrataciones 
+
+Route::controller(ContractController::class)->group(function(){
+    Route::get('contrataciones', 'index')->name('contractos.index');
+
+});
+
 
 
 
@@ -70,6 +80,11 @@ Route::controller(ServiceController::class)->group(function(){
     //ruta para ver un servicio
     Route::get('servicios/{service:slug}', 'show')->name('servicios.show');
 });
+
+
+
+
+
 
 
 

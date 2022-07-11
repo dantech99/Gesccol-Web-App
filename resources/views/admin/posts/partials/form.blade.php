@@ -42,7 +42,7 @@
 			@isset($post->image)
 			<img src="{{Storage::url($post->image->url)}}" alt="imagen-del-post">
 			@else
-			<img src="{{asset('images/banner-notice.jpeg')}}" alt="" id="picture">
+			<img src="https://th.bing.com/th/id/OIP.1RERMPCW2-x0N1a2nLsi-QHaC_?w=343&h=141&c=7&r=0&o=5&pid=1.7" alt="imagen-post" id="picture">
 			@endisset
 		</div>
 	</div>

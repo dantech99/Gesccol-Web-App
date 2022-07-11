@@ -1,5 +1,5 @@
 {{-- barra gov --}}
-<div class="container-xl d-flex  h-12 bg-[#3366CC]">
+<div class="container-xl d-flex  h-10 bg-[#3366CC]">
    <div class="container flex m-auto h-full">
     <img class=" w-auto my-2" src="{{ asset('images/logo.png') }}" alt="">
    </div>

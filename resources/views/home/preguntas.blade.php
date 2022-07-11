@@ -6,11 +6,11 @@
 
 <header class="container-xl">
     <x-header-bar>
-        <h1 class="text-4xl text-white m-auto text-center">Preguntas Frecuentes</h1>
+        <h1 class=" text-5xl font-bold text-[#2299AA] m-auto text-center">Preguntas Frecuentes</h1>
     </x-header-bar>
 </header>
 {{-- preguntas frecuentes  --}}
-<div class="content p-5 my-3 mx-3">
+<div class="container m-auto md:p-5 my-6">
     <div x-data="{ openedIndex: 1 }" class="flex flex-col p-4">
 
         

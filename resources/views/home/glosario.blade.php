@@ -7,7 +7,7 @@
 {{-- glosario de terminos  --}}
 <header class="container-xl">
     <x-header-bar>
-        <h1 class="text-4xl text-white m-auto text-center">Glosario De Terminos</h1>
+        <h1 class=" text-5xl font-bold text-[#2299AA] m-auto text-center">Glosario De Terminos</h1>
     </x-header-bar>
 </header>
 
@@ -21,7 +21,7 @@
         <div x-data="{ openedIndex: 1 }" class="flex flex-col p-4">
 
             
-            {{-- ------------------------A------------------------------ --}}
+            {{--------------------------A--------------------------------}}
             <div @click="openedIndex == 1 ? openedIndex = -1 : openedIndex = 1" class="mb-5 flex items-center bg-white border-t border-b border-secondary p-4">
               <p class="text-xl font-bold text-primary">A</p>
               <span :class="openedIndex == 1 ? 'fa-chevron-down' : 'fa-chevron-up'" class="fas ml-3"></span>

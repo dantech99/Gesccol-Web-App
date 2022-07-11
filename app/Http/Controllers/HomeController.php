@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use App\Mail\ContactanosMailable;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -17,6 +19,26 @@ class HomeController extends Controller
 
         return view('home.index', compact('posts'));
     }
+
+
+
+
+    public function store(Request $request) {
+
+        $request->validate([
+            'nombre' => 'required',
+            'email' => 'required|email',
+            'mensaje' => 'required',
+        ]);
+
+        $correo = new ContactanosMailable($request->all());
+
+        Mail::to('tecnico@gesccol.gov.co')->send($correo);
+
+        return redirect()->route('home.atencion')->with('info', 'mensaje enviado, pronto nos colocaremos en contacto.');
+    }
+
+
 
   
 

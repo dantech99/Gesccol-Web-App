@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use App\Models\Category;
+use Illuminate\Support\Facades\Cache;
 
 
 class PostController extends Controller
@@ -11,7 +12,14 @@ class PostController extends Controller
   
     public function index()
     {
-        $posts = Post::latest('id')->paginate(9);
+        if (Cache::has('posts')) {
+            $posts = Cache::get('posts');
+        } else {
+           $posts = Post::latest('id')->paginate(9);
+           Cache::put('posts', $posts);
+        }
+        
+    
         return view('posts.index', compact('posts'));
     }
 

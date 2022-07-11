@@ -2,10 +2,10 @@
 
 @section('title', 'Noticias Y Comunicados | Gesccol')
     
-@section('content')
+@section('content')     
 <header class="container-xl">
     <x-header-bar>
-        <h1 class="text-4xl text-white m-auto text-center font-semibold">Noticias, Informes y comunicados</h1>
+        <h1 class="text-4xl  m-auto text-center font-semibold">Noticias, Informes y comunicados</h1>
     </x-header-bar>  
 </header>
 
