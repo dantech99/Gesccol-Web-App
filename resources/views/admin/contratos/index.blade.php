@@ -3,7 +3,8 @@
 @section('title', 'Contrataciones | Gesccol')
 
 @section('content_header')
-    <a href="{{-- {{route('admin.posts.create')}} --}}" class="btn btn-secondary float-right">Nueva Contratacion</a>
+
+    <a href="{{route('admin.contratos.create')}}" class="btn btn-secondary float-right">Nueva Contratacion</a>
 
     <h1>Listado de Contrataciones</h1>
 @stop

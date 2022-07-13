@@ -14,10 +14,20 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
+            // User::create([
+            //     'name' => 'danilo macea',
+            //     'email' => 'antoniomcs21@hotmail.com',
+            //     'password' => bcrypt('12345')
+            // ]);
+
             User::create([
-                'name' => 'danilo macea',
-                'email' => 'antoniomcs21@hotmail.com',
-                'password' => bcrypt('12345')
+                'name' => 'usuario1',
+                'email' => 'info@gesccol.gob.co',
+                'password' => bcrypt('radicador')
             ]);
+
+            
+
+
     }
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Contract;
 
 class ContractController extends Controller
 {
@@ -20,35 +21,38 @@ class ContractController extends Controller
     
     public function create()
     {
-        //
+        return view('admin.contratos.create');
     }
 
    
     public function store(Request $request)
     {
-        //
+        $contract = Contract::create($request->all());
+        return redirect()->route('admin.contratos.edit', compact('contract'));
     }
 
    
-    public function show($id)
+    public function show(Contract $contract)
     {
         //
     }
 
   
-    public function edit($id)
+    public function edit(Contract $contract)
     {
-        //
+        return view('admin.contratos.edit', compact('contract'));
     }
 
    
-    public function update(Request $request, $id)
+    public function update(Request $request, Contract $contract)
     {
-        //
+        $contract->update($request->all());
+
+         return redirect()->route('admin.contratos.index', $contract)->with('info', 'Actualizacion Exitosa');
     }
 
     
-    public function destroy($id)
+    public function destroy(Contract $contract)
     {
         //
     }

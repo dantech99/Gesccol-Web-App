@@ -1,15 +1,18 @@
 @extends('adminlte::page')
 
-@section('title', 'Administracion | crear publicacion')
+@section('title', 'Creando publicacion | Gesccol')
 
 @section('content_header')
 
-
-    <h1>Listado de Noticias, Comunicados e Informes</h1>
+    <h1>Formulario para la creacion de una noticia, informe o comunicado</h1>
 @stop
 
 @section('content')
+
   <x-head.tinymce-config/>
+
+   <p class="container">Bienvenido al formulario de creacion de una noticia, informe o comunicado, aqui podras introducir los datos para crear nuevas entradas segun su categoria</p>
+
 <div class="card">
     <div class="card-body">
         {!! Form::open(['route' => 'admin.posts.store', 'autocomplete' => 'off', 'files' => true]) !!}

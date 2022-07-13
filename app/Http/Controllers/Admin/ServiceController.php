@@ -42,9 +42,9 @@ class ServiceController extends Controller
 
     
 
-    public function update(Request $request, $service)
+    public function update(Request $request, Service $service)
     {
-        $service->ipdate($request->all());
+        $service->update($request->all());
 
         return redirect()->route('admin.servicios.index', $service)->with('info', 'servicio actualizado con exito');
     }

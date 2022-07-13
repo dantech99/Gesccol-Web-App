@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Editar | Categorias')
+@section('title', 'Editando Categoria | Gesccol')
 
 @section('content_header')
-    <h1>Editar Categoria</h1>
+    <h1>Editor de  Categoria</h1>
 @stop
 
 @section('content')

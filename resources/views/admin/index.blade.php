@@ -18,7 +18,8 @@
       <header><h1>Gesccol E.I.C.E</h1></header>
 
         <main>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum inventore vitae ex consequuntur sapiente esse laborum eaque eius quae cupiditate blanditiis quidem repudiandae, expedita obcaecati similique architecto numquam maiores, saepe incidunt! Inventore quo saepe dolorum voluptatem, nemo dolor repudiandae minima. Nemo voluptates deserunt quisquam ducimus, minima, eos cum amet ab assumenda ipsa nulla earum animi quia officia, nesciunt sint necessitatibus. Aliquam aliquid facilis repudiandae eos, officiis? Dolore eius consequatur, exercitationem facere deserunt nobis, sed saepe enim earum eaque nam quas harum totam vero. Exercitationem fugit ea fugiat officia rerum, dolores et asperiores accusamus modi. Esse cumque, non fugit repudiandae reprehenderit?</p>
+            <p>Somos el gestor catastral, habilitado por el IGAC, para realizar las actividades de formación, actualización y conservación catastral, en el municipio de Sahagún – Córdoba.</p>
+            <p>La gestión catastral es un servicio público desarrollado a través de los procesos de formación, actualización, conservación y difusión de la información física, jurídica y económica de los predios, para una mejor administración de los territorios.</p>
 
             <img src="{{ asset('images/logo-gesccol.png') }}" alt="" class="img-fluid img-thumbnail p-3 mb-4">
 

@@ -3,7 +3,7 @@
 @section('title', 'Categorias | Gesccol')
 
 @section('content_header')
-    <h1>Categorias</h1>
+    <h1>Listado de Categorias</h1>
 @stop
 
 @section('content')

@@ -14,7 +14,9 @@
         <x-adminlte-alert theme="success" title="Listo!!" dismissable>
             <strong>{{session('info')}}</strong>
         </x-adminlte-alert>
-    @endif
+@endif
+
+ <p class="container">Editando la entrada: <strong>{{$post->title}}</strong> </p>
 
 <div class="card">
     <div class="card-body">

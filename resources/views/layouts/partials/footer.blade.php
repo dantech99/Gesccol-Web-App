@@ -3,30 +3,34 @@
         <div class="logo w-full flex ">
             <img src="{{ asset('images/logo-gesccol.png') }}" alt="logo-gesccol" class=" my-10 mx-10 w-48">
         </div>
-        <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 w-auto h-auto  mx-10 pb-40 ">
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 w-auto h-auto  mx-10 pb-10 ">
             <div>
-                <strong>Lorem ipsum dolor sit amet.</strong>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, rem!</p>
-                <strong>Lorem ipsum dolor sit amet.</strong>
-                <p>Lorem ipsum dolor sit.</p>
+                <strong>Horarios de Atencion</strong>
+                <p>Lunes a viernes 8:00 am - 12:00 pm 2:00 pm - 5:00 pm</p>
+                <br>
+                <strong>Direccion</strong>
+                <p>Terminal de Transportes</p>
             </div>
             <div>
-                <strong>Lorem ipsum dolor sit amet.</strong>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, rem!</p>
-                <strong>Lorem ipsum dolor sit amet.</strong>
-                <p>Lorem ipsum dolor sit.</p>
+                <strong>Correo Electronico</strong>
+                <p>info@gesccol.gov.co</p>
+                <br>
+                <strong>Telefono</strong>
+                <p>Muy Pronto</p>
             </div>
             <div>
-                <strong>Lorem ipsum dolor sit amet.</strong>
-                <strong>Lorem ipsum dolor sit amet.</strong>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, rem!</p>
-                <p>Lorem ipsum dolor sit.</p>
+                <strong>Gestion Catastral de Colombia</strong>
+                <br>
+                <p>NIT: 9394394294</p>
+                <p>Sahagún - Cordoba - Colombia</p>
+                <p>Politicas y Privacidad de los Datos</p>
+                <p>Terminos y Condiciones</p>
             </div>
         </div>
     </div>
     <div class="barra container-lx bg-[#3366CC] h-auto p-3 text-center flex justify-between">
         <h1></h1>
-        <h1 class="text-white font-semibold">GESCCOL   |  2022  |  Sahagun |</h1>
+        <h1 class="text-white font-semibold">&copy; Copyright <?php echo date('Y'); ?>, Gesccol - Todos los Drechos reservados  |  Sahagun - Cordoba </h1>
          @auth 
          <a href="{{route('admin.home')}}" class="text-white">administracion</a>   
          @else 

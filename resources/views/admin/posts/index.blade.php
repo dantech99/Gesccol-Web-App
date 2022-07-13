@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Noticias | Gesccol')
+@section('title', 'Noticias y Comunicados | Gesccol')
 
 @section('content_header')
 
@@ -10,7 +10,6 @@
 @stop
 
 @section('content')
-
 
     <hr class="pt-5">
     

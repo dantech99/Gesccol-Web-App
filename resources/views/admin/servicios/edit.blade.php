@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Noticias | Gesccol')
+@section('title', 'Editando Servicios | Gesccol')
 
 @section('content_header')
     <h1>Editor de Servicios</h1>
@@ -15,6 +15,8 @@
         <strong>{{session('info')}}</strong>
     </x-adminlte-alert>
 @endif
+
+ <p class="container">Editando el servicio: <strong>{{$service->title}}</strong> </p>
 
 
 <div class="card">

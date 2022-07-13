@@ -1,12 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Crear | Categorias')
+@section('title', 'Creando Categorias | Gesccol')
 
 @section('content_header')
-    <h1>Crear Categoria</h1>
+    <h1>Formulario para la creacion de categorias</h1>
 @stop
 
 @section('content')
+
 @if (session('info'))
     <x-adminlte-alert theme="success" title="Listo!!" dismissable>
             <strong>{{session('info')}}</strong>

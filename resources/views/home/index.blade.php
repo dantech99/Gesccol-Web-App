@@ -1,6 +1,6 @@
 @extends('layouts.template')
 
-@section('title', 'Inicio | Gestion Catastral De Colombia')
+@section('title', 'Inicio | Gestion Catastral De Colombia | Gesccol')
 
 @section('content')
 
@@ -18,7 +18,7 @@
         <div class="w-full h-auto p-6 col-span-2">
             <h1 class=" text-5xl font-bold text-[#2299AA]">Gesccol</h1>
             <h2 class="text-2xl font-bold text-[#2299AA]">E.I.C.E</h2>
-            <h4 class="text-lg text-[#2299AA]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis facilis iste tenetur assumenda sed consequatur optio corporis, ut dolore dolorum quasi tempora cupiditate doloremque alias consequuntur illum quaerat doloribus, ipsa culpa perferendis repellendus asperiores. Iste voluptas distinctio pariatur, voluptatum facilis reprehenderit debitis quia doloremque, accusamus tempora eligendi voluptatem suscipit porro!</h4>
+            <h4 class="text-lg text-[#2299AA]">Somos el gestor catastral, habilitado por el IGAC, para realizar las actividades de formación, actualización y conservación catastral, en el municipio de Sahagún – Córdoba.</h4>
         </div>
        
     </div>
@@ -83,9 +83,9 @@
        <article class=" ">
             <div class="w-full h-60 overflow-hidden">
                 @if ($post->image)
-                    <img src="{{Storage::url($post->image->url)}}" alt="" class="h-full w-full object-cover">
+                    <img src="{{Storage::url($post->image->url)}}" alt="gesccol-imagenes" class="h-full w-full object-cover">
                     @else
-                    <img src="images/banner-notice.jpeg" alt="" class="w-full h-full object-cover">
+                    <img src="images/banner-notice.jpeg" alt="gesccol-imagenes" class="w-full h-full object-cover">
                 @endif
             </div>
             <div class="w-full p-3 text-[#2299AA] text-2xl font-medium hover:underline">

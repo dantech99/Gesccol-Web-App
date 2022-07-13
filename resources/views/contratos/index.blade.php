@@ -6,7 +6,7 @@
 
 <header class="container-xl">
     <x-header-bar>
-        <h1 class="text-5xl font-bold text-[#2299AA] m-auto text-center">Contrataciones</h1>
+        <h1 class=" text-5xl font-bold text-[#2299AA] m-auto text-center">Contrataciones</h1>
     </x-header-bar>  
 </header>
 
@@ -74,7 +74,7 @@
                         <th class=" text-center pr-4">estado</th>
                         <th class=" text-center pr-4">Entidad</th>
                         <th class=" text-center pr-4">Objetivo</th>
-                        <th class=" text-center pr-4">Cuatia</th>
+                        <th class=" text-center pr-4">Cuantia</th>
                         <th class=" text-center pr-4">Fecha</th>
                     </tr>
 
@@ -104,7 +104,7 @@
                         <th class=" text-center pr-4">estado</th>
                         <th class=" text-center pr-4">Entidad</th>
                         <th class=" text-center pr-4">Objetivo</th>
-                        <th class=" text-center pr-4">Cuatia</th>
+                        <th class=" text-center pr-4">Cuantia</th>
                         <th class=" text-center pr-4">Fecha</th>
                     </tr>
 
@@ -132,7 +132,7 @@
                         <th class=" text-center pr-4">estado</th>
                         <th class=" text-center pr-4">Entidad</th>
                         <th class=" text-center pr-4">Objetivo</th>
-                        <th class=" text-center pr-4">Cuatia</th>
+                        <th class=" text-center pr-4">Cuantia</th>
                         <th class=" text-center pr-4">Fecha</th>
                     </tr>
                    @foreach ($statusthree as $contract)

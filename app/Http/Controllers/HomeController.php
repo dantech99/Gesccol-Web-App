@@ -33,7 +33,7 @@ class HomeController extends Controller
 
         $correo = new ContactanosMailable($request->all());
 
-        Mail::to('tecnico@gesccol.gov.co')->send($correo);
+        Mail::to('info@gesccol.gov.co')->send($correo);
 
         return redirect()->route('home.atencion')->with('info', 'mensaje enviado, pronto nos colocaremos en contacto.');
     }

@@ -1,14 +1,15 @@
 @extends('adminlte::page')
 
-@section('title', 'servicios | Gesccol')
+@section('title', ' Servicios | Gesccol')
 
 @section('content_header')
-     <a href="{{-- {{route('admin.posts.create')}} --}}" class="btn btn-secondary float-right">Nuevo Servicio/Tramite</a>
+     <a href="{{route('admin.servicios.create')}}" class="btn btn-secondary float-right">Nuevo Servicio/Tramite</a>
 
     <h1>Listado de Servicios y Tramites</h1>
 @stop
 
 @section('content')
+
    <hr class="mt-5">
 
     @if (session('info'))

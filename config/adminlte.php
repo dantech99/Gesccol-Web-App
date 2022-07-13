@@ -333,12 +333,12 @@ return [
          ['header' => 'CONTRATOS'],
         [
             'text' => 'Lista de contratos',
-            'icon' => 'fas fa-book-open',
+            'icon' => 'fas fa-file-signature',
             'route' => 'admin.contratos.index',
         ],
         [
             'text' => 'Crear Contrato',
-            'icon' => 'fas fa-book-open',
+            'icon' => 'fas fa-file-signature',
             'route' => 'admin.contratos.create',
         ],
 

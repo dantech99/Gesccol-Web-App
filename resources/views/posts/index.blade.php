@@ -5,7 +5,7 @@
 @section('content')     
 <header class="container-xl">
     <x-header-bar>
-        <h1 class="text-4xl  m-auto text-center font-semibold">Noticias, Informes y comunicados</h1>
+        <h1 class=" text-5xl font-bold text-[#2299AA] m-auto text-center">Noticias, Informes y comunicados</h1>
     </x-header-bar>  
 </header>
 

@@ -13,8 +13,8 @@ return new class extends Migration
         Schema::create('contracts', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('numeroprocesos');
-            $table->string('tipo');
-            $table->string('estado');
+            $table->text('tipo');
+            $table->text('estado');
             $table->text('entidad');
             $table->longText('objetivo')->nullable();
            

@@ -6,7 +6,7 @@
 
 <header class="container-xl">
     <x-header-bar>
-        <h1 class="text-4xl text-black m-auto text-center font-semibold">Tramites y Servicios</h1>
+        <h1 class=" text-5xl font-bold text-[#2299AA] m-auto text-center">Tramites y Servicios</h1>
     </x-header-bar>  
 </header>
 
