@@ -12,12 +12,11 @@ class PostController extends Controller
   
     public function index()
     {
-        // if (Cache::has('posts')) {
-        //     $posts = Cache::get('posts');
-        // } else {
+       
            $posts = Post::latest('id')->paginate(9);
            Cache::put('posts', $posts);
-        // }
+
+          
         
      
         return view('posts.index', compact('posts'));

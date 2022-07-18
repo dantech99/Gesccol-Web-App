@@ -17,6 +17,15 @@
 </div>
 
 <div class="form-group">
+	{!! Form::label('details', 'details') !!}
+	{!! Form::text('details', null, ['class' => 'form-control', 'placeholder' => 'ingrese el nombre del slug']) !!}
+
+	@error('details')
+	<small class="text-danger">{{$message}}</small>
+	@enderror
+</div>
+
+<div class="form-group">
 		{!! Form::label('description', 'descripcion') !!}
 		{!! Form::textarea('description', null, ['class' => 'form-control']) !!}
 		@error('description')

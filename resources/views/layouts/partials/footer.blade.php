@@ -6,10 +6,12 @@
         <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 w-auto h-auto  mx-10 pb-10 ">
             <div>
                 <strong>Horarios de Atencion</strong>
-                <p>Lunes a viernes 8:00 am - 12:00 pm 2:00 pm - 5:00 pm</p>
+                <p>Lunes a viernes 8:00 am - 12:00 pm </p>
+                <p>2:00 pm - 5:00 pm</p>
                 <br>
                 <strong>Direccion</strong>
-                <p>Terminal de Transportes</p>
+                <p>Terminal de Transportes local 1-4</p>
+                <p>Sahagun - Cordoba</p>
             </div>
             <div>
                 <strong>Correo Electronico</strong>
@@ -23,14 +25,13 @@
                 <br>
                 <p>NIT: 9394394294</p>
                 <p>Sahagún - Cordoba - Colombia</p>
-                <p>Politicas y Privacidad de los Datos</p>
-                <p>Terminos y Condiciones</p>
+                <p><a href="">Politicas y Privacidad de los Datos</a> </p>
             </div>
         </div>
     </div>
     <div class="barra container-lx bg-[#3366CC] h-auto p-3 text-center flex justify-between">
         <h1></h1>
-        <h1 class="text-white font-semibold">&copy; Copyright <?php echo date('Y'); ?>, Gesccol - Todos los Drechos reservados  |  Sahagun - Cordoba </h1>
+        <h1 class="text-white font-semibold">&copy; Copyright <?php echo date('Y'); ?>, Gesccol | Sahagun - Cordoba </h1>
          @auth 
          <a href="{{route('admin.home')}}" class="text-white">administracion</a>   
          @else 

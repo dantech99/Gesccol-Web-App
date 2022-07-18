@@ -13,7 +13,7 @@
         <div class="col-span-2">
           
             <div class="image  h-auto overflow-hidden w-full">
-                <img src="{{asset('images/banner-notice.jpeg')}}" alt="" class="object-cover object-center w-full">
+                <img src="{{asset('images/banner-notice.jpeg')}}" alt="imagen-gesccol" class="object-cover object-center w-full">
             </div>
             <div class="contenido m-auto p-5 md:px-2 md:pt-5">
                 <p class=" text-xl text-black">
@@ -36,7 +36,7 @@
         @foreach ($similares as $similar)
         <div class="bg-gray-200 h-auto">
             <div class="w-auto">
-                <img src="{{asset('images/banner-notice.jpeg')}}" alt="">
+                <img src="{{asset('images/banner-notice.jpeg')}}" alt="imagen-gesccol">
             </div>
             <div class="w-auto p-5">
                 <a href="{{route('posts.show', $similar)}}" class="text-xl text-primary">{{$similar->title}}</a>

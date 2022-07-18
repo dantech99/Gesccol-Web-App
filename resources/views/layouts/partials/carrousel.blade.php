@@ -24,25 +24,29 @@
     </div>
 
     <div class="carousel-inner relative  overflow-hidden">
-      <div class="carousel-item active relative float-left w-full">
+      <div class="carousel-item active relative float-left w-full max-h-[32rem]">
         <img
-          src="images/banner-notice.jpeg"
+          src="{{asset('images/gesccol-sahagun.jpg')}}"
           class="block w-full "
           alt="..."
         />
+        <div class="carousel-caption hidden md:block absolute text-center">
+        <h5 class="text-xl">First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
       
       </div>
-      <div class="carousel-item relative float-left w-full">
+      <div class="carousel-item relative float-left w-full max-h-[32rem] overflow-hidden">
         <img
-          src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
+          src="{{asset('images/oficinas.jpg')}}"
           class="block w-full"
           alt="..."
         />
        
       </div>
-      <div class="carousel-item relative float-left w-full">
+      <div class="carousel-item relative float-left w-full max-h-[32rem]">
         <img
-          src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+          src="{{asset('images/infografia-modelo-gestion-catastral.jpg')}}"
           class="block w-full"
           alt="..."
         />
@@ -75,3 +79,10 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+
+
+
+
+
+

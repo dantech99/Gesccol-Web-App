@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="Keywords" content="gesccol, catastro, catastral, gestion catastral, Gesccol, desenglobe, englobe, sahagun, cordoba, colombia, predios, terrenos">
+    <meta name="Robots" content="all"/>
     <meta name="description" content="Somos el gestor catastral, habilitado por el IGAC, para realizar las actividades de formación, actualización y conservación catastral, en el municipio de Sahagún – Córdoba.">
+   
     <title>@yield('title')</title>
     
 
