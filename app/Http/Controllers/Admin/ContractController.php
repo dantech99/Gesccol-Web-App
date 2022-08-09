@@ -54,6 +54,7 @@ class ContractController extends Controller
     
     public function destroy(Contract $contract)
     {
-        //
+        $contract->delete();
+        return redirect()->route('admin.contratos.index')->with('info', 'Registro eliminado con exito');
     }
 }

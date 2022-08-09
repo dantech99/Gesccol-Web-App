@@ -23,6 +23,9 @@
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
+    <style type="text/css">
+        <textarea name=""></textarea>
+    </style>
 @stop
 
 @section('js')

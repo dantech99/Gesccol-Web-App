@@ -23,7 +23,7 @@
             <div>
                 <strong>Gestion Catastral de Colombia</strong>
                 <br>
-                <p>NIT: 9394394294</p>
+                <p>NIT: 901560504-0</p>
                 <p>Sahagún - Cordoba - Colombia</p>
                 <p><a href="">Politicas y Privacidad de los Datos</a> </p>
             </div>

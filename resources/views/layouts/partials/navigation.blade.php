@@ -24,10 +24,10 @@
                     <p class="{{request()->routeIs('home.somos') ? 'active' : ''}}"> ¿Quienes Somos?</p>
                   </a>
  --}}
-                <a href="{{Route('contractos.index')}}" class="focus:text-indigo-700 border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5   hover:bg-[#85a133] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                {{-- <a href="{{Route('contratos.index')}}" class="focus:text-indigo-700 border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5   hover:bg-[#85a133] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                       
-                   <p class="{{request()->routeIs('contractos.index') ? 'active' : ''}}">Contrataciones</p>
-                </a>
+                   <p class="{{request()->routeIs('contratos.index') ? 'active' : ''}}">Contrataciones</p>
+                </a> --}}
               </div>
           </div>
       </div>
@@ -78,7 +78,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            {{-- <li>
                               <a class="cursor-pointer" href="{{Route('home.somos')}}">
                                   <div class="text-gray-800 pt-10">
                                       <div class="flex items-center">
@@ -86,7 +86,7 @@
                                       </div>
                                   </div>
                               </a>
-                          </li>
+                          </li> --}}
                             <li>
                               <a class="cursor-pointer" href="{{Route('servicios.index')}}">
                                   <div class="text-gray-800 pt-10">
@@ -104,16 +104,7 @@
                                     </div>
                                 </div>
                             </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer" href="{{Route('posts.index')}}">
-                                <div class="text-gray-800 pt-10">
-                                    <div class="flex items-center">
-                                        <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3"> Comunicados</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                        </li> 
                         <li>
                             <a class="cursor-pointer" href="{{Route('home.atencion')}}">
                                 <div class="text-gray-800 pt-10">
@@ -124,7 +115,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="cursor-pointer" href="">
+                            <a class="cursor-pointer" href="{{route('contratos.index')}}">
                                 <div class="text-gray-800 pt-10">
                                     <div class="flex items-center">
                                         <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">Contrataciones</p>

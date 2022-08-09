@@ -22,13 +22,16 @@
       
       {{-- cdn  tw-components  --}}
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+      {{-- flowbite --}}
+      <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
       <script src="https://cdn.tailwindcss.com"></script>
 
       {{-- sweetalert --}}
       <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
       {{-- styles  --}}
       <style>
         ion-icon {
@@ -55,12 +58,17 @@
         .img-post{
           
         }
+
+        
       </style>
 
   <script src="{{ asset('js/app.js') }}" defer></script>
 
 </head>
 <body>
+    {{-- plugin de paginas --}}
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v14.0" nonce="eZqN0IYy"></script>
     {{-- header --}}
     @include('layouts.partials.header')
 
@@ -80,5 +88,15 @@
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <script type="text/javascript">
+      function inputSearch() {
+        return {
+            iconReset: false,
+            search: '',
+        }
+    }
+
+    </script>
 </body>
 </html>

@@ -15,9 +15,6 @@
 
 {{-- seccion de noticias  --}}
 <section class="container m-auto">
-    <div class="container w-full my-5">
-        <h1 class="m-auto text-2xl font-bold text-[#2299AA]">Noticias Comunicados  e Informes</h1>
-    </div>
 
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3 h-auto py-6 px-5 md:px-0">
         @foreach ($posts as $post)

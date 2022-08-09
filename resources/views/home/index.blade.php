@@ -12,13 +12,14 @@
 {{-- present --}}
 <div class="container m-auto my-5 bg-[#ECF2FF] shadow-lg">
     <div class="grid grid-cols-2 gap-4 md:grid-cols-3 ">
-        <div class="w-full  h-auto p-6">
-            <img src="images/logo-gesccol.png" alt="logo-gesccol" >
+        <div class="w-full  h-auto p-6 md:col-span-1 col-span-2">
+            <img src="images/logo-gesccol.png" alt="logo-gesccol" class="md:w-full  w-72 ">
         </div>
         <div class="w-full h-auto p-6 col-span-2">
             <h1 class=" text-5xl font-bold text-[#2299AA]">Gesccol</h1>
             <h2 class="text-2xl font-bold text-[#2299AA]">E.I.C.E</h2>
-            <h4 class="text-lg text-[#2299AA]">Somos el gestor catastral, habilitado por el IGAC, para realizar las actividades de formación, actualización y conservación catastral, en el municipio de Sahagún – Córdoba.</h4>
+            <h4 class="text-lg text-[#2299AA]">Somos el gestor catastral, habilitado por el IGAC, para realizar las actividades de formación, actualización y conservación catastral, en el municipio de Sahagún – Córdoba.
+            La gestión catastral es un servicio público desarrollado a través de los procesos de formación, actualización, conservación y difusión de la información física, jurídica y económica de los predios, para una mejor administración de los territorios.</h4>
         </div>
        
     </div>
@@ -80,7 +81,7 @@
 
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3 py-6 h-full">
         @foreach ($posts as $post)
-       <article class=" ">
+       <article >
             <div class="w-full h-60 overflow-hidden">
                 @if ($post->image)
                     <img src="{{Storage::url($post->image->url)}}" alt="gesccol-imagenes" class="h-full w-full object-cover">
@@ -91,10 +92,13 @@
             <div class="w-full p-3 text-[#2299AA] text-2xl font-medium hover:underline">
                 <a href="{{route('posts.show', $post)}}"><h1>{{$post->title}}</h1></a>
             </div>
+             <div class="px-3">
+                <span class="text-gray-500 text-xs">{{$post->created_at->format('Y-m-d')}}</span>
+            </div>
             <div class="p-3 ">
                 {!!Str::limit($post->content, 200)!!}
             </div>
-            <p class="p-3 text-gray-500">Publicado por: {{$post->author}}</p>
+            <p class="p-3 text-gray-500">{{$post->author}}</p>
        </article>
        @endforeach
     </div>

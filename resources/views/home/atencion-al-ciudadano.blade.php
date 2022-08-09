@@ -44,6 +44,9 @@
                     <p><strong>{{$message}}</strong></p>
                     @enderror
 
+                    <label for=""></label>
+                    <input type="radio">
+
 
                     <button class=" w-28 my-3 p-4 text-xl font-medium boton" type="submit" >Enviar</button>
                 </form>

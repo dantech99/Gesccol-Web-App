@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>Gesccol</b>',
+    'logo' => '<b>| Gesccol</b>',
     'logo_img' => 'images/logo-gesccol.png',
     'logo_img_class' => 'brand-image  ',
     'logo_img_xl' => null,
@@ -341,11 +341,22 @@ return [
             'icon' => 'fas fa-file-signature',
             'route' => 'admin.contratos.create',
         ],
+        [
+            'text' => 'Listado de Ordenes',
+            'icon' => 'fas fa-shopping-bag',
+            'route' => 'admin.ordenes.index',
+        ],
+        [
+            'text' => 'Crear Orden',
+            'icon' => 'fas fa-shopping-bag',
+            'route' => 'admin.ordenes.create',
+        ],
+
 
 
         
     ],
-
+// admin.ordenes
     /*
     |--------------------------------------------------------------------------
     | Menu Filters

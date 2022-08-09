@@ -27,12 +27,12 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index')->name('home.index');
 
     //quines somos
-    Route::get('quienes-somos', 'whoweare')->name('home.somos');
+    Route::get('nosotros', 'whoweare')->name('home.somos');
 
     //atencion al ciudadano
-    Route::get('atencion-al-ciudadano', 'attention')->name('home.atencion');
+    Route::get('ciudadania', 'attention')->name('home.atencion');
 
-    //atencion al ciudadano
+    //estructura de los correos
     Route::post('contactanos', 'store')->name('home.store');
 
     //glosario de terminos claves
@@ -49,7 +49,9 @@ Route::controller(HomeController::class)->group(function () {
 // ruta para las vistas de contrataciones 
 
 Route::controller(ContractController::class)->group(function(){
-    Route::get('contrataciones', 'index')->name('contractos.index');
+    Route::get('contratos', 'contracts')->name('contratos.contratos');
+    Route::get('contrataciones', 'index')->name('contratos.index');
+    Route::get('ordenes', 'ordenes')->name('contratos.ordenes');
 
 });
 

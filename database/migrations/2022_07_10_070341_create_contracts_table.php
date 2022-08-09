@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('entidad');
             $table->longText('objetivo')->nullable();
            
-            $table->enum('status', [1, 2, 3])->default(1);
+            $table->enum('status', [1,2,3])->default(1);
 
             $table->text('valor');
 
