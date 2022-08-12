@@ -32,10 +32,7 @@ class ContractController extends Controller
     }
 
    
-    public function show(Contract $contract)
-    {
-        //
-    }
+   
 
   
     public function edit(Contract $contract)

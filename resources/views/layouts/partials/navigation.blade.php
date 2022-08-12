@@ -20,14 +20,13 @@
                    <p class="{{request()->routeIs('home.atencion') ? 'active' : ''}}"> Atencion al Ciudadano</p>
                 </a>
 
-                {{--  <a href="{{Route('home.somos')}}" class="focus:text-indigo-700 border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                 <!-- <a href="{{Route('home.somos')}}" class="focus:text-indigo-700 border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                     <p class="{{request()->routeIs('home.somos') ? 'active' : ''}}"> ¿Quienes Somos?</p>
-                  </a>
- --}}
-                {{-- <a href="{{Route('contratos.index')}}" class="focus:text-indigo-700 border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5   hover:bg-[#85a133] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                  </a> -->
+                <a href="{{Route('contratos.index')}}" class="focus:text-indigo-700 border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5   hover:bg-[#85a133] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                       
                    <p class="{{request()->routeIs('contratos.index') ? 'active' : ''}}">Contrataciones</p>
-                </a> --}}
+                </a> 
               </div>
           </div>
       </div>

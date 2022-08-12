@@ -351,6 +351,18 @@ return [
             'icon' => 'fas fa-shopping-bag',
             'route' => 'admin.ordenes.create',
         ],
+        ['header' => 'ADICIONALES'],
+        ['header' => 'Glosarios'],
+        [
+            'text' => 'Listado de palabras',
+            'icon' => 'fas fa-atlas',
+            'route' => 'admin.glosario.index',
+        ],
+        [
+            'text' => 'Agregar palabras o terminos claves',
+            'icon' => 'fas fa-atlas',
+            'route' => 'admin.glosario.create',
+        ],
 
 
 

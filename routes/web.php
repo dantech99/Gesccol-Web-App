@@ -5,6 +5,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ContractController;
+use App\Http\Controllers\GlosaryController;
+
 use Illuminate\Support\Facades\Route;
 use App\Mail\ContactanosMailable;
 
@@ -35,9 +37,6 @@ Route::controller(HomeController::class)->group(function () {
     //estructura de los correos
     Route::post('contactanos', 'store')->name('home.store');
 
-    //glosario de terminos claves
-    Route::get('glosario', 'glossary')->name('home.glossary');
-
     //preguntas frecuentes
     Route::get('preguntas-frecuentes', 'questions')->name('home.questions');
 
@@ -45,6 +44,10 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('normativas', 'regulations')->name('home.regulations');
 
 });
+
+
+ Route::get('glosario', [GlosaryController::class, 'index'])->name('glosario.index');
+
 
 // ruta para las vistas de contrataciones 
 

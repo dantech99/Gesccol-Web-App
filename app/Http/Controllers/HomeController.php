@@ -58,11 +58,6 @@ class HomeController extends Controller
         return view('home.contacto');
     }
 
-    //glosario de terminos claves
-    public function glossary(){
-        return view('home.glosario');
-    }
-
     //preguntas frecuentes
     public function questions(){
         return view('home.preguntas');
