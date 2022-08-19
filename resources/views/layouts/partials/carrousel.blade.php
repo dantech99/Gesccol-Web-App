@@ -6,7 +6,7 @@
          <!-- Item 1 -->
         <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="">
             <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-            <img src="{{asset('images/gesccol-sahagun.jpg')}}" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 h-full object-cover" alt="...">
+            <img src="{{asset('images/infogesccol.png')}}" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 h-full object-cover" alt="...">
         </div>
         <!-- Item 2 -->
 
@@ -16,7 +16,7 @@
 
         <!-- Item 3 -->
         <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
-            <img src="{{asset('images/gestor-catastral-sahagun.jpg')}}" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 h-full object-cover" alt="...">
+            <a href="http://gesccol.gov.co/posts/sahagun-habilitado-como-gestor-catastral"><img src="{{asset('images/gestor-catastral-sahagun.jpg')}}" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 h-full object-cover" alt="..."></a>
         </div>
     </div>
 
@@ -42,91 +42,3 @@
     </button>
 </div>
 
-
-
-
-
-
-{{-- <div id="carouselExampleCaptions" class="carousel slide carousel-fade relative" data-bs-ride="carousel">
-  <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4"> --}}
-
-    {{-- botones inferiores --}}
-{{--     <button
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide-to="0"
-      class="active"
-      aria-current="true"
-      aria-label="Slide 1"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide-to="1"
-      aria-label="Slide 2"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide-to="2"
-      aria-label="Slide 3"
-    ></button>
-
-  </div> --}}
-
-
-
-{{-- items del carousel  --}}
- {{--  <div class="carousel-inner relative w-full overflow-hidden ">
-
-    <div class="carousel-item active relative float-left w-full h-screen bg-no-repeat bg-cover bg-center">
-     <img src="{{asset('images/gesccol-sahagun.jpg')}}" alt="" class="w-full h-full">
-      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-cover bg-no-repeat" style="background: linear-gradient(45deg, rgba(30, 30, 30, 0.7), rgba(20, 20, 20,  0.7) 100%);">
-      </div>
-    </div>
-
-
-    <div class="carousel-item relative float-left w-full h-screen   bg-no-repeat bg-cover bg-center"> 
-      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed" style="background-color: rgba(0, 0, 0, 0.3)">
-        <img src="{{asset('images/oficinas.jpg')}}" alt="" class="w-full h-full">
-      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-cover bg-no-repeat" style="background: linear-gradient(45deg, rgba(30, 30, 30, 0.7), rgba(20, 20, 20,  0.7) 100%);">
-      </div>
-      </div>
-    </div>
-
-    <div class="carousel-item relative float-left w-full h-screen  bg-no-repeat bg-cover bg-center">
-    
-      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed" style="background: linear-gradient(45deg, rgba(29, 236, 197, 0.7), rgba(91, 14, 214, 0.7) 100%);">
-         <img src="{{asset('images/infografia-modelo-gestion-catastral.jpg')}}" alt="" class="w-full h-full">
-      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-cover bg-no-repeat" style="background: linear-gradient(45deg, rgba(30, 30, 30, 0.7), rgba(20, 20, 20,  0.7) 100%);">
-      </div>
-      </div>
-    </div>
-  </div> --}}
-
-{{-- botones de siguiente y anterios  --}}
-  {{-- <button
-    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-    type="button"
-    data-bs-target="#carouselExampleCaptions"
-    data-bs-slide="prev"
-  >
-    <span
-      class="carousel-control-prev-icon inline-block bg-no-repeat"
-      aria-hidden="true"
-    ></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button
-    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-    type="button"
-    data-bs-target="#carouselExampleCaptions"
-    data-bs-slide="next"
-  >
-    <span
-      class="carousel-control-next-icon inline-block bg-no-repeat"
-      aria-hidden="true"
-    ></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div> --}}
