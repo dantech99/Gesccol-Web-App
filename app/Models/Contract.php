@@ -14,5 +14,13 @@ class Contract extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function files(){
+        return $this->morphOne(File::class, 'filelable');
+    }
+    // public function image()
+    // {
+    //     return $this->morphOne(Image::class, 'imageable');
+    // }
     
 }

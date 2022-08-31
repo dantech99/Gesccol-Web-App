@@ -18,7 +18,8 @@ class ContractController extends Controller
         $statustwo = Contract::where('status', 'ejecucion')->latest('id')->paginate(20);
         $statusthree = Contract::where('status', 'celebrado')->latest('id')->paginate(20);
         
-        return view('contratos.contratos', compact('contratos', 'statusone', 'statustwo', 'statusthree'));   
+        return view('contratos.contratos', compact('contratos', 'statusone', 'statustwo', 'statusthree'));
+        // return $contratos;
     }
 
     public function ordenes(){

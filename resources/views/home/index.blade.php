@@ -31,6 +31,9 @@
 
 {{-- enlaces de interes  --}}
 <div class="container m-auto py-8">
+    <div class="container w-full my-5">
+        <h1 class="m-auto text-4xl font-bold text-[#2299AA] text-center">Vinculos de Interés</h1>
+    </div>
     <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4">
         <a href="{{Route('servicios.index')}}">
             <div class="w-full  h-auto m-1 flex flex-col p-9 ">

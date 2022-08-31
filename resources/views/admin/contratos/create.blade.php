@@ -15,7 +15,7 @@
 
 <div class="card">
     <div class="card-body">
-        {!! Form::open(['route' => 'admin.contratos.store', 'autocomplete' => 'off']) !!}
+        {!! Form::open(['route' => 'admin.contratos.store', 'autocomplete' => 'off', 'files' => true]) !!}
 
         {!! Form::hidden('user_id', auth()->user()->id) !!}
 

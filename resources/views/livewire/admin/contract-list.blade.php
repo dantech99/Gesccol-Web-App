@@ -15,6 +15,7 @@
                     <th>entidad</th>
                     <th>objetivo</th>
                     <th>valor</th>
+                    <th>documentos</th>
                     <th>fecha</th>
                     <th colspan="1">Acciones</th>
                 </tr>
@@ -29,6 +30,7 @@
                     <td>{{$contract->entidad}}</td>
                     <td> <textarea  cols="30" rows="10" readonly>{{$contract->objetivo}}</textarea></td>
                     <td>{{$contract->valor}}</td>
+                    <td>{{$contract->documentos}}</td>
                     <td>{{$contract->created_at}}</td>
                     <td>
                         <a href="{{route('admin.contratos.edit', $contract)}}" class="btn btn-primary">Editar</a>

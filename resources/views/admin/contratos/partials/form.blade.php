@@ -80,3 +80,11 @@
 	@enderror
 </div>
 
+<div class="form-group">
+	{!! Form::label('documentos', 'Documento que se mostrara en el proyecto') !!}
+    {!! Form::file('documentos', null, ['class' => 'form-control-file']) !!}
+
+	@error('objetivo')
+	<small class="text-danger">{{$message}}</small>
+	@enderror
+</div>

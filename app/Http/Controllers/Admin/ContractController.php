@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Contract;
+use Illuminate\Support\Facades\Storage;
 
 class ContractController extends Controller
 {
@@ -28,7 +29,15 @@ class ContractController extends Controller
     public function store(Request $request)
     {
         $contract = Contract::create($request->all());
+        $url = Storage::put('documents', $request->file('documentos'));
+
+        $contract->files()->create([
+                'url' => $url
+            ]);
+      
+
         return redirect()->route('admin.contratos.edit', compact('contract'));
+       
     }
 
    

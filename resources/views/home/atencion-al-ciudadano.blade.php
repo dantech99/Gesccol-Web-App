@@ -16,36 +16,48 @@
         </div>
         <div class="w-full">
             <div class=" m-7 border p-3">
-                <form action="{{route('home.store')}}" class="flex flex-col" method="POST">
+                <form action="{{route('home.store')}}" class="flex flex-col" id="formulario" method="POST">
                     @csrf
-                    <input type="text" class="mt-5 p-3 rounded-lg" name="nombre" placeholder="Nombre y Apellidos">
+
+                    {{-- nombre de usuario --}}
+                    <input type="text" class="mt-5 p-3 rounded-lg"  name="nombre" id="nombre" placeholder="Nombre y Apellidos" required value="{{old('nombre')}}" >
                     @error('nombre')
                     <br>
-                    <p><strong>{{$message}}</strong></p>
+                    <p><strong class="text-red-400">{{$message}}</strong></p>
                     @enderror
 
-                    <input type="email" class="mt-5 p-3 rounded-lg" placeholder="Correo" name="email">
-                    
-                     @error('email')
+                    {{-- correo del usuario --}}
+                    <input type="email" class="mt-5 p-3 rounded-lg"  placeholder="Correo" name="email" id="email" required value="{{old('email')}}">
+                    @error('email')
                      <br>
-                    <p><strong>{{$message}}</strong></p>
+                    <p><strong >{{$message}}</strong></p>
                     @enderror
 
 
-                    <input type="number" class="mt-5 p-3 rounded-lg" placeholder="Telefono" name="tel">
+                    {{-- telefono del usuario --}}
+                    <input type="number" class="mt-5 p-3 rounded-lg"  placeholder="Telefono" name="tel" id="telefono" required value="{{old('tel')}}">
                     <br>
-
-
-                    <textarea name="mensaje"  rows="15" class="mt-5 rounded-lg p-3" placeholder="Mensaje"></textarea>
-                    
-
-                     @error('mensaje')
-                     <br>
+                    @error('tel')
+                    <br>
                     <p><strong>{{$message}}</strong></p>
                     @enderror
 
-                    <label for=""></label>
-                    <input type="radio">
+
+                    {{-- mensaje del usuario --}}
+                    <textarea name="mensaje" id="mensaje"   rows="15" class="mt-5 rounded-lg p-3" placeholder="Mensaje" required value="{{old('mensaje')}}" ></textarea>
+                    @error('mensaje')
+                     <br>
+                    <p><strong >{{$message}}</strong></p>
+                    @enderror
+
+
+                    {{-- aceptar los terminos y condiciones --}}
+                    <label for="terminos" class="text-blue-300 font-medium"><a href="">Acepta los Terminos y Condiciones</a></label>
+                    <input type="radio" name="terminos" required id="terminos" class="w-4">
+                    @error('terminos')
+                     <br>
+                    <p><strong>{{$message}}</strong></p>
+                    @enderror
 
 
                     <button class=" w-28 my-3 p-4 text-xl font-medium boton" type="submit" >Enviar</button>
@@ -93,5 +105,6 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.292089474439!2d-75.45074778583984!3d8.9452093927602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e59634ef03f3e37%3A0xa255ec1d58b4da3b!2sGesccol%20E.I.C.E!5e0!3m2!1ses-419!2sco!4v1655910888770!5m2!1ses-419!2sco" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 </section>
+
 
 @endsection

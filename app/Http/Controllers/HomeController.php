@@ -29,6 +29,7 @@ class HomeController extends Controller
             'nombre' => 'required',
             'email' => 'required|email',
             'mensaje' => 'required',
+            'terminos' => 'required',
         ]);
 
         $correo = new ContactanosMailable($request->all());

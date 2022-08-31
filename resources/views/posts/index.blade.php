@@ -21,7 +21,7 @@
         <article class="h-96 max-h-96 ">
                 <div class="w-full h-60 overflow-hidden">
                     @if ($post->image)
-                        <img src="{{Storage::url($post->image->url)}}" alt="imagenes-gesccol" c class="h-full w-full object-cover">
+                        <img src="{{Storage::url($post->image->url)}}" alt="imagenes-gesccol" class="h-full w-full object-cover">
                     @else
                      <img src="images/banner-notice.jpeg" alt="imagenes-gesccol"  class="h-full w-full object-cover">
                     @endif

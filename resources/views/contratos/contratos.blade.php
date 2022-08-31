@@ -49,6 +49,7 @@
                         <th class=" text-center pr-4">Entidad</th>
                         <th class=" text-center pr-4">Objeto</th>
                         <th class=" text-center pr-4">Cuantia</th>
+                        <th class=" text-center pr-4">documentos</th>
                         <th class=" text-center pr-4">Fecha</th>
                     </tr>
 
@@ -59,6 +60,8 @@
                                 <td class="p-2 text-center">{{$contract->entidad}}</td>
                                 <td class="p-2 text-center  text-xs"><textarea name="" id="" cols="30" rows="2" disabled>{{$contract->objetivo}} </textarea> </td>
                                 <td class="p-2 text-center">$ {{$contract->valor}}</td>
+                                <td class="p-2 text-center text-blue-400"><a href="{{Storage::url($contract->files->url)}}" target="_blank">Ver PDF <ion-icon size="small" name="open"></ion-icon></a></td>
+
                                 <td class="p-2 w-20 text-center text-xs">{{$contract->created_at->format('Y-m-d')}}</td>
                             </tr>
                      @endforeach
@@ -80,6 +83,7 @@
                         <th class=" text-center pr-4">Entidad</th>
                         <th class=" text-center pr-4">Objeto</th>
                         <th class=" text-center pr-4">Cuantia</th>
+                         <th class=" text-center pr-4">documentos</th>
                         <th class=" text-center pr-4">Fecha</th>
                     </tr>
 
@@ -90,6 +94,7 @@
                                 <td class="p-2 text-center">{{$contract->entidad}}</td>
                                 <td class="p-2 text-center  text-xs"><textarea name="" id="" cols="30" rows="2" disabled>{{$contract->objetivo}} </textarea> </td>
                                 <td class="p-2 text-center">$ {{$contract->valor}}</td>
+                                <td class="p-2 text-center text-blue-400"><a href="{{Storage::url($contract->files->url)}}" target="_blank">Ver PDF</a></td>
                                 <td class="p-2 w-20 text-center text-xs">{{$contract->created_at->format('Y-m-d')}}</td>
                             </tr>
                      @endforeach
@@ -111,6 +116,7 @@
                         <th class=" text-center pr-4">Entidad</th>
                         <th class=" text-center pr-4">Objeto</th>
                         <th class=" text-center pr-4">Cuantia</th>
+                         <th class=" text-center pr-4">documentos</th>
                         <th class=" text-center pr-4">Fecha</th>
                     </tr>
 
@@ -121,6 +127,7 @@
                                 <td class="p-2 text-center">{{$contract->entidad}}</td>
                                 <td class="p-2 text-center  text-xs"><textarea name="" id="" cols="30" rows="2" disabled>{{$contract->objetivo}} </textarea> </td>
                                 <td class="p-2 text-center">$ {{$contract->valor}}</td>
+                                <td class="p-2 text-center text-blue-400"><a href="{{Storage::url($contract->files->url)}}" target="_blank">Ver PDF</a></td>
                                 <td class="p-2 w-20 text-center text-xs">{{$contract->created_at->format('Y-m-d')}}</td>
                             </tr>
                      @endforeach
@@ -141,6 +148,7 @@
                         <th class=" text-center pr-4">Entidad</th>
                         <th class=" text-center pr-4" colspan="2">Objeto</th>
                         <th class=" text-center pr-4">Cuantia</th>
+                         <th class=" text-center pr-4">documentos</th>
                         <th class=" text-center pr-4">Fecha</th>
                     </tr>
                    @foreach ($statusthree as $contract)
@@ -150,6 +158,7 @@
                                 <td class="p-2 text-center">{{$contract->entidad}}</td>
                                 <td class="p-2 text-center  text-xs"><textarea name="" id="" cols="30" rows="2" disabled>{{$contract->objetivo}} </textarea> </td>
                                 <td class="p-2 text-center">$ {{$contract->valor}}</td>
+                                <td class="p-2 text-center text-blue-400"><a href="{{Storage::url($contract->files->url)}}" target="_blank">Ver PDF</a></td>
                                 <td class="p-2 w-20 text-center text-xs">{{$contract->created_at->format('Y-m-d')}}</td>
                             </tr>
                      @endforeach
