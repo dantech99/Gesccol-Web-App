@@ -41,13 +41,24 @@ class HomeController extends Controller
 
 
 
-  
-
-
     //metodo quienes somos
     public function whoweare(){
         return view('home.quienes-somos');
     }
+
+    public function direccion(){
+        return view('home.direccion');
+    }
+
+    public function equipo(){
+        return view('home.equipo-directivo');
+    }
+
+    public function politicas(){
+        return view('home.politicas');
+    }
+
+
 
     //atencion al ciudadano
     public function attention(){

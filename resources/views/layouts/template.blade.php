@@ -55,8 +55,9 @@
           color: white !important;
         }
 
-        .img-post{
-          
+        ul.lista{
+          list-style: "\2714";
+          color: black;
         }
 
         

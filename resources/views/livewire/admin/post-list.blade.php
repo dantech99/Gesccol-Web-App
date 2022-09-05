@@ -9,6 +9,7 @@
             <thead>
                 <tr>
                     <th>Id</th>
+                     <th>imagen</th>
                     <th>Titulo</th>
                     <th colspan="1">Acciones</th>
                 </tr>
@@ -17,7 +18,8 @@
                 @foreach ($posts as $post)
                  <tr>
                     <td>{{$post->id}}</td>
-                    <td>{{$post->title}}</td>
+                    <td><img src="{{Storage::url($post->image->url)}}" alt="gesccol-imagenes" class="img-thumbnail" style="width:25%;"></td>
+                    <td width="50%"> <a href="{{route('posts.show', $post)}}" target="_blank"><h3>{{$post->title}}</h3></a></td>
                     <td>
                         <a href="{{route('admin.posts.edit', $post)}}" class="btn btn-primary">Editar</a>
                     </td>

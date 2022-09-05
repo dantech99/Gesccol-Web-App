@@ -10,8 +10,8 @@
     </x-header-bar> 
 </header>
 
-<div class="container mdp-5 my-6 m-auto">
-    <div x-data="{ openedIndex: 1 }" class="flex flex-col p-4">
+<div class="container mdp-5 my-6 m-auto grid grid-cols-4">
+    <div x-data="{ openedIndex: 1 }" class="flex flex-col p-4 col-span-3">
 
         
      
@@ -62,7 +62,12 @@
         <p>Por medio del cual se fijan los precios unitarios de venta de los productos y servicios que comercializa la empresa industrial y comercial del estado "gestión catastral de colombia" (GESCCOL E.I.C.E) en le municipio de Sahagún Córdoba.<a href="https://drive.google.com/file/d/1Z2V-9kLtzybMbyb7H2tNpgsnxDAe18n-/view?usp=sharing" target="_blank" class="text-blue-500"><ion-icon name="document" size="small"></ion-icon>Ver Documento en pdf</a></p>
         <br>
         </div>
-      </div>
+    </div>
+     {{-- layout-aside  --}}
+    <aside class="w-full  border border-gray-200 p-5">
+       <x-sidebar-nav>
+        </x-sidebar-nav>
+    </aside>
 </div>
 
 

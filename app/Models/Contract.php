@@ -18,9 +18,5 @@ class Contract extends Model
     public function files(){
         return $this->morphOne(File::class, 'filelable');
     }
-    // public function image()
-    // {
-    //     return $this->morphOne(Image::class, 'imageable');
-    // }
-    
+
 }

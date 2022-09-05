@@ -8,6 +8,7 @@ use App\Models\Contract;
 class ContractList extends Component
 {
     use WithPagination;
+    
     protected $paginationTheme = "bootstrap";
 
     public $search;

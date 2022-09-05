@@ -31,6 +31,13 @@ Route::controller(HomeController::class)->group(function () {
     //quines somos
     Route::get('nosotros', 'whoweare')->name('home.somos');
 
+    Route::get('direccion-y-administracion', 'direccion')->name('home.administracion');
+
+    Route::get('equipo-directivo', 'equipo')->name('home.equipo');
+
+    Route::get('politicas-de-datos-y-privacidad', 'politicas')->name('home.politicas');
+
+
     //atencion al ciudadano
     Route::get('ciudadania', 'attention')->name('home.atencion');
 
@@ -42,6 +49,8 @@ Route::controller(HomeController::class)->group(function () {
 
     //normativas y legalidades
     Route::get('normativas', 'regulations')->name('home.regulations');
+
+
 
 });
 

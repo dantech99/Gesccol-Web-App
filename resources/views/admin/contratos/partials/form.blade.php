@@ -82,9 +82,9 @@
 
 <div class="form-group">
 	{!! Form::label('documentos', 'Documento que se mostrara en el proyecto') !!}
-    {!! Form::file('documentos', null, ['class' => 'form-control-file']) !!}
+    {!! Form::file('file', ['class' => 'form-control-file']) !!}
 
-	@error('objetivo')
+	@error('documentos')
 	<small class="text-danger">{{$message}}</small>
 	@enderror
 </div>

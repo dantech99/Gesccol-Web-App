@@ -29,11 +29,12 @@ class ContractController extends Controller
     public function store(Request $request)
     {
         $contract = Contract::create($request->all());
-        $url = Storage::put('documents', $request->file('documentos'));
-
-        $contract->files()->create([
+        if ($request->file('file')) {
+            $url = Storage::put('documents', $request->file('file'));
+            $contract->files()->create([
                 'url' => $url
             ]);
+        }
       
 
         return redirect()->route('admin.contratos.edit', compact('contract'));
@@ -53,6 +54,20 @@ class ContractController extends Controller
     public function update(Request $request, Contract $contract)
     {
         $contract->update($request->all());
+
+        if ($request->file('files')) {
+            $url = Storage::put('posts', $request->file('file'));
+
+            if ($contract->files) {
+                Storage::delete($contract->files->url);
+
+                $contract->files->update([
+                    'url' => $url]);
+            }else{
+                $contract->files()->create([
+                    'url' => $url]);
+            }
+        }
 
          return redirect()->route('admin.contratos.index', $contract)->with('info', 'Actualizacion Exitosa');
     }
