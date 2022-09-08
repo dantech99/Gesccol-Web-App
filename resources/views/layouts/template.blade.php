@@ -51,6 +51,10 @@
           color: #000 !important;
 
         }
+        .active-bg{
+          background: #3366CC !important;
+          color: white;
+        }
         .active:hover{
           color: white !important;
         }
@@ -60,6 +64,69 @@
           color: black;
         }
 
+        /* botones flotantes de aumentar y disminuir fuente */
+
+
+        .btn-1 {
+              text-transform: uppercase; /* Texto en mayusculas */
+              font-weight: bold; /* Fuente en negrita o bold */
+              border-radius: 5px; /* Borde del boton */
+              letter-spacing: 2px; /* Espacio entre letras */
+              padding: 10px; /* Relleno del boton */
+              position: fixed;
+              bottom: 70px;
+              right: 5px;
+              transition: all 300ms ease 0ms;
+              box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+              z-index: 99;
+            }
+
+          .btn-2{
+              text-transform: uppercase; /* Texto en mayusculas */
+              font-weight: bold; /* Fuente en negrita o bold */
+              border-radius: 5px; /* Borde del boton */
+              letter-spacing: 2px; /* Espacio entre letras */
+              padding:10px; /* Relleno del boton */
+              position: fixed;
+              bottom: 10px;
+              right: 5px;
+              transition: all 300ms ease 0ms;
+              box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+              z-index: 99;
+          }
+            .btn-1:hover {
+              background-color: #2c2fa5; /* Color de fondo al pasar el cursor */
+              box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+              transform: translateY(-7px);
+            }
+
+            /*@media only screen and (max-width: 600px) {
+              .btn-flotante {
+                font-size: 14px;
+                padding: 12px 20px;
+                bottom: 20px;
+                right: 20px;
+              }
+            }*/
+
+
+            /* estilos para el cambio de tamaño de la fuente de la web */
+
+             .f0 {
+                font-size: 0.8rem;
+              }
+              .f1 {
+                font-size: 0.9rem;
+              }
+              .f2 {
+                font-size: 1rem;
+              }
+              .f3 {
+                font-size: 1.1rem;
+              }
+              .f4 {
+                font-size: 1.2rem;
+              }
         
       </style>
 
@@ -67,6 +134,9 @@
 
 </head>
 <body>
+  <a href="#" id="aumentar" class="btn-1 bg-blue-500"><ion-icon name="add-circle" size="small" class="text-white"></ion-icon></a>
+  <a href="#" id="disminuir" class="btn-2 bg-blue-500"><ion-icon name="remove-circle" size="small" class="text-white"></ion-icon></a>
+
     {{-- plugin de paginas --}}
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v14.0" nonce="eZqN0IYy"></script>
@@ -97,6 +167,35 @@
             search: '',
         }
     }
+
+   function imprimir(){
+    window.print();
+   }
+
+   var classes = ["f0", "f1", "f2", "f3", "f4"];
+   var classIndex = 2;
+   document.getElementById('aumentar').addEventListener('click', function(){
+    let previousClass = classIndex;
+    classIndex++;
+    classIndex = (classIndex == classes.length) ? classes.length -1 : classIndex;
+    changeClass(previousClass, classIndex);
+   });
+   document.getElementById('disminuir').addEventListener('click', function(){
+    let previousClass = classIndex;
+    classIndex--;
+    classIndex = (classIndex < 0) ? 0 : classIndex;
+    changeClass(previousClass, classIndex);
+   });
+
+   function changeClass(previous, next){
+    if (previous != next) {
+      var htmlElement = document.querySelector('html')
+      htmlElement.classList.remove(classes[previous]);
+      htmlElement.classList.add(classes[next]);
+    }
+   }
+
+
 
     </script>
 </body>
