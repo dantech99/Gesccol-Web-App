@@ -10,7 +10,7 @@
     </x-header-bar> 
 </header>
 
-<div class="container mdp-5 my-6 m-auto grid grid-cols-4">
+<div class="container md:p-5 my-6 m-auto grid grid-cols-1 md:grid-cols-4">
     <div x-data="{ openedIndex: 1 }" class="flex flex-col p-4 col-span-3">
 
         

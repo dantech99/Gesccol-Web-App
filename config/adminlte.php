@@ -235,6 +235,13 @@ return [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
         ],
+        [
+            'text' => 'documentacion de uso',
+            'route' => 'admin.docs',
+            'target' => '_blank',
+            'icon' => 'fas fa-book',
+            'topnav_right' => true,
+        ],
 
         // Sidebar items:
         [

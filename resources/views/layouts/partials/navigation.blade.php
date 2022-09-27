@@ -3,26 +3,15 @@
       <div class="flex items-center justify-center">
           <div class="flex">
               <div class="hidden xl:flex md:mr-8 xl:mr-16 text-white">
-                  <a href="/" class="focus:text-indigo-700 border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133]   focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
-                      Inicio
-                  </a>
-                  <a href="{{Route('servicios.index')}}" class="focus:text-indigo-700 border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
-                      
-                      <p class="{{request()->routeIs('servicios.index') ? 'active' : ''}}">Tramites y Servicios</p>
-                  </a>
-                  <a href="{{Route('posts.index')}}" class="{{request()->routeIs('posts.index') ? 'active' : ''}}focus:text-indigo-700 border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
-                      
-                     <p class="{{request()->routeIs('posts.index') ? 'active' : ''}}"> Noticias y Comunicados</p>
-                  </a>
+                  <a href="/" class="{{request()->routeIs('home.index') ? 'active' : ''}}  border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out">Inicio</a>
 
-                  <a href="{{Route('home.atencion')}}" class="focus:text-indigo-700 border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5   hover:bg-[#85a133] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
-                      
-                   <p class="{{request()->routeIs('home.atencion') ? 'active' : ''}}"> Atencion al Ciudadano</p>
-                </a>
+                  <a href="{{Route('servicios.index')}}" class="{{request()->routeIs('servicios.index') ? 'active' : ''}}  border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out">Tramites y Servicios</a>
 
-                 <a href="{{Route('home.somos')}}" class="focus:text-indigo-700 border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
-                    <p class="{{request()->routeIs('home.somos') ? 'active' : ''}}"> ¿Quienes Somos?</p>
-                  </a>
+                  <a href="{{Route('posts.index')}}" class="{{request()->routeIs('posts.index') ? 'active' : ''}}  border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out"> Noticias y Comunicados</a>
+
+                  <a href="{{Route('home.atencion')}}" class="{{request()->routeIs('home.atencion') ? 'active' : ''}}  border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out">Atencion al Ciudadano</a>
+
+                 <a href="{{Route('home.somos')}}" class="{{request()->routeIs('home.somos') ? 'active' : ''}}  border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out">¿Quienes Somos?</a>
                {{--  <a href="{{Route('contratos.index')}}" class="focus:text-indigo-700 border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5   hover:bg-[#85a133] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                       
                    <p class="{{request()->routeIs('contratos.index') ? 'active' : ''}}">Contrataciones</p>
@@ -78,37 +67,37 @@
                                 </a>
                             </li>
                             <li>
-                              <a class="cursor-pointer" href="{{Route('home.somos')}}">
+                              <a class="cursor-pointer" href="{{Route('servicios.index')}}">
                                   <div class="text-gray-800 pt-10">
                                       <div class="flex items-center">
-                                          <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">¿Quienes Somos?</p>
+                                          <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">Tramites Y Servicios</p>
                                       </div>
                                   </div>
                               </a>
                           </li>
                             <li>
-                              <a class="cursor-pointer" href="{{Route('servicios.index')}}">
+                              <a class="cursor-pointer" href="{{Route('posts.index')}}">
                                   <div class="text-gray-800 pt-10">
                                       <div class="flex items-center">
-                                          <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3"> Tramites y Servicios</p>
+                                          <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">Noticias Y Comunicados</p>
                                       </div>
                                   </div>
                               </a>
                           </li>
                           <li>
-                            <a class="cursor-pointer" href="{{Route('posts.index')}}">
+                            <a class="cursor-pointer" href="{{Route('home.atencion')}}">
                                 <div class="text-gray-800 pt-10">
                                     <div class="flex items-center">
-                                        <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">Noticias</p>
+                                        <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">Atencion al Ciudadano</p>
                                     </div>
                                 </div>
                             </a>
                         </li> 
                         <li>
-                            <a class="cursor-pointer" href="{{Route('home.atencion')}}">
+                            <a class="cursor-pointer" href="{{Route('home.somos')}}">
                                 <div class="text-gray-800 pt-10">
                                     <div class="flex items-center">
-                                        <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">Atencion al Ciudadano</p>
+                                        <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">¿Quienes Somos?</p>
                                     </div>
                                 </div>
                             </a>

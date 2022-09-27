@@ -25,16 +25,17 @@
                 <br>
                 <p>NIT: 901560504-0</p>
                 <p>Sahagún - Cordoba - Colombia</p>
-                <p><a href="">Politicas y Privacidad de los Datos</a> </p>
+                <p><a href="{{Route('home.politicas')}}">Politicas y Privacidad de los Datos</a> </p>
             </div>
         </div>
     </div>
     <div class="barra container-lx bg-[#3366CC] h-auto p-3 text-center flex justify-between">
-        <h1></h1>
-        <h1 class="text-white font-semibold">&copy; Copyright <?php echo date('Y'); ?>, Gesccol | Sahagun - Cordoba </h1>
          @auth 
          <a href="{{route('admin.home')}}" class="text-white">administracion</a>   
          @else 
-         <a href="{{route('login')}}" class="text-white h-5 w-5 bg-blue-900"></a> @endauth
+         <a href="{{route('login')}}" class="text-white h-5 w-5 bg-blue-600"></a> @endauth
+        <h1 class="text-white font-semibold">&copy; Copyright <?php echo date('Y'); ?>, Gesccol | Sahagun - Cordoba </h1>
+        <h1></h1>
+        
     </div>
 </footer>

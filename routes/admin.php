@@ -12,6 +12,7 @@ use App\Http\Controllers\admin\GlosaryController;
 
 
 Route::get('', [HomeController::class, 'index'])->name('admin.home');
+Route::get('documentacion-app-gesccol', [HomeController::class, 'docs'])->name('admin.docs');
 
 // 'ruta/{variable} => nombre iguales'
 Route::resource('categories', CategoryController::class)->names('admin.categorias');
@@ -25,3 +26,4 @@ Route::resource('contracts', ContractController::class)->names('admin.contratos'
 Route::resource('orders', OrderController::class)->names('admin.ordenes');
 
 Route::resource('glosario', GlosaryController::class)->names('admin.glosario');
+

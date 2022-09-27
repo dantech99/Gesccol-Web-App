@@ -8,6 +8,7 @@
     <meta name="Keywords" content="gesccol, catastro, catastral, gestion catastral, Gesccol, desenglobe, englobe, sahagun, cordoba, colombia, predios, terrenos">
     <meta name="Robots" content="all"/>
     <meta name="description" content="Somos el gestor catastral, habilitado por el IGAC, para realizar las actividades de formación, actualización y conservación catastral, en el municipio de Sahagún – Córdoba.">
+    <meta property="og:image" content="http://gesccol.gov.co/images/logo-gesccol.png">
    
     <title>@yield('title')</title>
     
@@ -48,7 +49,7 @@
         }
 
         .active{
-          color: #000 !important;
+          background: #85A133 !important;
 
         }
         .active-bg{
@@ -94,11 +95,6 @@
               box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
               z-index: 99;
           }
-            .btn-1:hover {
-              background-color: #2c2fa5; /* Color de fondo al pasar el cursor */
-              box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
-              transform: translateY(-7px);
-            }
 
             /*@media only screen and (max-width: 600px) {
               .btn-flotante {
@@ -145,7 +141,7 @@
 
      {{-- navigation --}}
 
-     @include('layouts.partials.navigation')
+    @include('layouts.partials.navigation')
 
   
 

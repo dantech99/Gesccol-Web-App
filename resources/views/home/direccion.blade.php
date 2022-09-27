@@ -10,10 +10,10 @@
     </x-header-bar>
 </header>
 
-<section class="container m-auto h-auto my-10 p-5">
-    <div class="grid md:grid-cols-4 grid-cols-1 gap-6">
+
+    <div class="container md:p-5 my-6 m-auto grid grid-cols-1 md:grid-cols-4">
         {{-- layout-seccion principal --}}
-        <div class="container w-full col-span-3">
+        <div class="container w-full col-span-3 p-4">
             <div class="flex bg-blue-700 h-10">
                 <h1 class="m-auto ml-5 text-white text-xl font-medium">Direccion y Administracion</h1>
             </div>
@@ -58,6 +58,5 @@
             </x-sidebar-nav>
         </aside>
     </div>
-</section>
 
 @endsection

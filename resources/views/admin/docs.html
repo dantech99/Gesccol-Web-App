@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Documentacion Para el Cliente</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        <link rel="stylesheet" type="text/css" href="../../../public/css/docscliente.css">
+        <style type="text/css">
+           .main {
+               padding: 0 150px !important;
+               padding-top: 30px !important;
+            }
+            .bar {
+              text-align: center !important;
+              padding: 0 0 !important;
+               width: 100% !important;
+               background-color: #698733 !important;
+               padding: 30px !important;
+               color: white !important;
+            }
+            html, body {
+              padding: 0 !important;
+              margin: 0 !important;
+            }
+        </style>
+
+    </head>
+    <body class="vscode-body vscode-light">
+
+      <div class="bar">
+        <h1>Documentacion GesccolApp</h1>
+      </div>
+
+      <section class="main">
+
+        <h1 id="documentacion-para-el-cliente-encargado-de-la-administracion-del-sitio-web">Documentacion Para el Cliente Encargado De La Administracion Del Sitio Web.</h1>
+        <p>link del proyecto <a href="http://gesccol.gov.co/">http://gesccol.gov.co/</a></p>
+        <p>Link del Repositorio para documentación Tecnica <a href="https://github.com/Antonio-code2/Gesccol-App.git">https://github.com/Antonio-code2/Gesccol-App.git</a></p>
+        <h1 id="objetivos">Objetivos</h1>
+        <p>Brindar una guia clara aserca del funcionamiento de la aplicacion a nivel no tecnico, en donde las personas encargadas de administrar dicho sitio web lo agan sin sumergirse en ningun codigo fuente del proyecto.
+        Esta documentacion detallara paso por paso las diferentes funcionalidades que ofrece la aplicacion, el proyecto no se mantiene en la misma version todo el tiempo por lo que esta documentacion se mantendra en constante actualizacion</p>
+        <h1 id="tabla-de-contenido">Tabla de Contenido</h1>
+        <ol>
+          <li>
+            <a href="#estructura-de-la-aplicacion">Estructura de la aplicacion</a>
+            <ul>
+              <li>
+                <a href="#componente-cliente">Componente Cliente</a>
+                <ul>
+                  <li><a href="#vistas">Vistas</a></li>
+                </ul>
+              </li>
+              <li>
+              <a href="#componente-administrativo">Componente Administrativo</a>
+                <ul>
+                  <li><a href="#vistas-admin">Vistas</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#las-secciones">Las Secciones</a></li>
+          <li>
+          <a href="#como-se-hace-🤔">¿Como se Hace?</a>
+              <ul>
+                  <li><a href="#como-se-crea-una-categoria">¿Como se crea una categoria?</a></li>
+                  <li><a href="#como-se-crea-un-post-o-noticia">¿Como se crea un post o noticia?</a></li>
+                  <li><a href="#como-se-crea-un-servicio">¿Como se crea un servicio?</a></li>
+                  <li><a href="#como-se-crea-una-contratacion-y-una-orden">¿Como se crea una contratacion y una orden?</a></li>
+                  <li><a href="#como-se-crea-una-palabra-clave">¿Como se crea o ingresa una palabra clave?</a></li>
+                  <li><a href="#como-puedo-cambiar-la-imagen-de-una-noticia">¿Como puedo cambiar la imagen de una noticia?</a></li>
+              </ul>
+          </li>
+          <li><a href="#conclusiones">Conclusiones</a></li>
+          <li><a href="#documentacion-tecnica">Documentacion Tecnica</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ol>
+          <h1 id="estructura-de-la-aplicacion">Estructura de la Aplicacion</h1>
+          <p>Gesccol Web esta divido en dos partes, para mantener el orden de la aplicacion entendible.</p>
+          <ol>
+          <li>Componente Cliente</li>
+          <li>Componente Administrativo</li>
+          </ol>
+          <h1 id="componente-cliente">Componente Cliente</h1>
+          <h2 id="vistas">Vistas</h2>
+          <p>En este componete que comprende toda la parte visual que el usuario puede ver e interactuar, como las paginas de inicio, servicios, atencion al usuario, acontinuacion se detallara cada una de las paginas en este componente</p>
+          <h3 id="--home--inicio-ruta---httpgesccolgovco">- Home | Inicio Ruta  👉 <a href="http://gesccol.gov.co/">http://gesccol.gov.co/</a></h3>
+          <p>Pagina de incio cuando el usuario ingresa por primera ves al sitio web, aqui podra visualizar un menu de navegacion con el cual podra navegar entre las demas paginas, contiene una seccion de noticias y enlaces de interes que explicare mas adelante.</p>
+          <h3 id="guia-de-tramites-y-servicios--httpgesccolgovcoservicios">Guia de tramites y servicios 👉 <a href="http://gesccol.gov.co/servicios">http://gesccol.gov.co/servicios</a></h3>
+          <p>En esta vista se muestra el listado de tramites y servicios ofrecidos por la empresa, cada tramite contiene una vista por separado en el que se detallans los requisitos para este.
+          ejm: 👉 <a href="http://gesccol.gov.co/servicios/mutacion-de-primera">http://gesccol.gov.co/servicios/mutacion-de-primera</a></p>
+          <h3 id="glosario-de-terminos--httpgesccolgovcoglosario">Glosario de Terminos 👉 <a href="http://gesccol.gov.co/glosario">http://gesccol.gov.co/glosario</a></h3>
+          <p>glosario de conceptos y terminos claves de catastro, para que los usuarios puedan concer los terminos relacionados con el catastro y comprendan de que se les habla</p>
+          <h3 id="normativas-y-legalidades--httpgesccolgovconormativas">Normativas Y Legalidades 👉 <a href="http://gesccol.gov.co/normativas">http://gesccol.gov.co/normativas</a></h3>
+          <p>listado de normativas y legalidades que riguen a la empresa.
+          Listado de Resoluciones aserca de la Trasnparencia de la empresa.</p>
+          <h3 id="noticias-y-comunicados--httpgesccolgovcoposts">Noticias y Comunicados. 👉 <a href="http://gesccol.gov.co/posts">http://gesccol.gov.co/posts</a></h3>
+          <p>En esta seccion de muestra un listado de noticias, comunicados o informes publicados por la empresa, cualquier informe que pueda ser de interes para la ciudadania, o si el equipo de gesccol quiere poner en conocimiento cualquier reporte, anuncion, convocatoria, informe y demas, lo podra hacer y estos se listaran en esta pagina.</p>
+          <h3 id="atencion-al-ciudadano--httpgesccolgovcociudadania">Atencion al ciudadano 👉 <a href="http://gesccol.gov.co/ciudadania">http://gesccol.gov.co/ciudadania</a></h3>
+          <p>En esta pagina se encontrara un formulario de contacto directo con la recepcion de la empresa, desde aqui el usuario podra enviar junto con sus datos de contacto, un mensaje dirigido a la empresa con cualquier inquietud, queja o reclamo que se le presente con relacion a los servicios, noticias y informacion de legalidad, el correo llegara a la bandeja de secretaria de conservación, esta se pondra en contacto con el usuario lo mas pronto posible por medio de los datos suministrados por el usuario en el mensaje.</p>
+          <ul>
+          <li>La pagina tambien contiene datos de contacto adicionales de la empresa y una ubicacion con un plugins de google maps.</li>
+          </ul>
+          <h3 id="quienes-somos--httpgesccolgovconosotros">Quienes Somos 👉 <a href="http://gesccol.gov.co/nosotros">http://gesccol.gov.co/nosotros</a></h3>
+          <p>En esta pagina se alojara todo lo relacionado con el perfil de la empresa, como sus funciones y objetivos que garantizan la transparencia y compromiso para cumplir con su labor catastral.</p>
+          <h3 id="direccion-y-administracion--httpgesccolgovcodireccion-y-administracion">Direccion y Administracion 👉 <a href="http://gesccol.gov.co/direccion-y-administracion">http://gesccol.gov.co/direccion-y-administracion</a></h3>
+          <p>En esta pagina se mostrara informacion sobre la junta directiva de la empresa, junto con las funciones de esta y quienes son las personas al mando de la empresa.</p>
+          <h3 id="equipo-directivo--httpgesccolgovcoequipo-directivo">Equipo Directivo 👉 <a href="http://gesccol.gov.co/equipo-directivo">http://gesccol.gov.co/equipo-directivo</a></h3>
+          <p>En esta pagina se puede apreciar un diagrama en forma de arbol que representa todo el equipo de trabajo de la empresa gesccol, aqui se podra apreciar el talento y profesionalismos que esta acargo de los procesos de catastro en la region.</p>
+          <h3 id="politica-de-datos--httpgesccolgovcopoliticas-de-datos-y-privacidad">Politica de Datos 👉 <a href="http://gesccol.gov.co/politicas-de-datos-y-privacidad">http://gesccol.gov.co/politicas-de-datos-y-privacidad</a></h3>
+          <p>En esta pagina estara detallado las politicas de privacidad que se tienen en cuenta para proteger y no mal usar la informacion que el usuario puede proporcionar, brindando asi una transparencia con respecto a la informacion brindada por el usuario, cualquier persona puede acudir a ellas si siente que su informacion ha sido vulnerada por parte de la empresa.</p>
+          <h1 id="componente-administrativo">Componente Administrativo</h1>
+          <p>El componente administrativo no es mas que el lugar en donde se crean, modifica y elimina el contenido que la empresa quiere hacer llegar al publico, desde aqui se podra administrar las noticias, los servicios, contratos, terminos y categorias que el componente usuario muestra.
+          contiene varis vistas divididad en secciones que representa cada contenido que se publica.</p>
+          <p>Este componente esta restringido, por lo que el encargado de la administracion del sitio debe tener una cuenta de acceso autorizada para podeer ingresar, para solicitar estos datos se debe poner en contacto con el desarrollador de la aplicacion web <a href="mailto:antoniomcs21@hotmail.com">antoniomcs21@hotmail.com</a></p>
+          <h2 id="vistas-admin">Vistas admin</h2>
+          <h3 id="home--administracion--httpgesccolgovcoadmin">Home | Administracion 👉 <a href="http://gesccol.gov.co/admin">http://gesccol.gov.co/admin</a></h3>
+          <p>En esta pagina solo se mostrara informacion de la empresa, es la puerta de entrada.</p>
+          <h3 id="categorias">Categorias</h3>
+          <p>Contiene dos paginas, una para crear una categoria y otra para mostrar el listado de categorias</p>
+          <h3 id="noticiascomunicados">Noticias/comunicados</h3>
+          <ul>
+          <li>pagina de creacion</li>
+          <li>listado de noticias</li>
+          </ul>
+          <h3 id="servicios">Servicios</h3>
+          <ul>
+          <li>pagina de creacion</li>
+          <li>listado de servicios</li>
+          </ul>
+          <h3 id="contratos-y-ordenes">Contratos y Ordenes</h3>
+          <ul>
+          <li>pagina de creacion de contratos</li>
+          <li>listado de contratos</li>
+          <li>pagina de creacion de ordenes</li>
+          <li>listado de ordenes</li>
+          </ul>
+          <h3 id="adicionales">Adicionales</h3>
+          <ul>
+          <li>Listado de palabras</li>
+          <li>creacion de termino desconocido</li>
+          </ul>
+          <p>cada una de estas funciones funciona igual, el administrado puede crear un registro, este aparecera creado en el listado, y este listado tiene las opciones de eliminar y editar dicho registro.</p>
+          <h1 id="las-secciones">Las secciones</h1>
+          <p>las secciones son los diferentes bloques en que se divide el panel de registros del componente administrativo, para poder entender mejor como esta distribuido la aplicacion, hay que explicar que existen actualmente 6 tablas de registros, las cuales almacenan toda la informacion que se muestra en la aplicacion web, estas tablas son.</p>
+          <ul>
+          <li><strong>Categorias</strong>:
+          que esta relacionada con los post, sirve para administrar las categorias que se crean</li>
+          <li><strong>Noticas/Post</strong>
+          para administrar los posts que se publican y van dirigidos al publico, tiene una relacion con las categorias para que estas puedan ser filtradas por las mismas</li>
+          <li><strong>Servicios</strong>:
+          para administrar el registro de todos los servicios que la empresa ofrece a la ciudadania</li>
+          <li><strong>Contratos</strong>:</li>
+          <li>para administrar todas las entradas de contratacion que la empresa decide publicar para mostrar a los entes legales la legalidad de dichos contratos</li>
+          <li><strong>Ordenes</strong>
+          para administrar las ordenes que se llevan a cabo en la empresa, productos, vienes o servicios se publican aqui</li>
+          <li><strong>Glosario</strong>:
+          Para administrar todos los terminos desconocidos de catastro que se publican en la pagina de glosario de terminos</li>
+          </ul>
+          <h1 id="como-se-hace--">Como se Hace  🤔</h1>
+          <ul>
+          <li>
+          <h3 id="como-se-crea-una-categoria"><em><strong>Como se crea una categoria</strong></em></h3>
+          <p>Las cagorias estan relacionadas con las noticias, esto quiere decir que solo se pueden usar para clasificar una noticia en cuestion, ejm: si la noticia se publicara como comunicada, se puede crear una categoria con el nombre &quot;<em><strong>comunicado</strong></em>&quot;, veamos como se hace.</p>
+          <ul>
+          <li>dirigirse al formulario para crear una categoria en  👉 <a href="http://gesccol.gov.co/admin/categories/create">http://gesccol.gov.co/admin/categories/create</a> al hacerlo aparece un formulario con varios campos en donde debera llenar los datos que se piden, el slug se llena solo.
+          <img src="https://i.postimg.cc/ZKPf1Lg5/categoria.png" alt="comunicado">
+          y crear cateogira, esta aparecera creada en el listado de categorias 👉 <a href="http://gesccol.gov.co/admin/categories">http://gesccol.gov.co/admin/categories</a>
+          <img src="https://i.postimg.cc/VNh4jZSD/categoria-lista.png" alt="listado">
+          la categoria se ha creado con exito, ahora vamos a asignarsela a una noticia.</li>
+          </ul>
+          </li>
+          <li>
+          <h3 id="como-se-crea-una-noticia"><em><strong>¿Como se crea una noticia?</strong></em>.</h3>
+          <ul>
+          <li>las noticias o comunicados se crean de la misma forma que una categoria, se accede al formulario en la pagina 👉 <a href="http://gesccol.gov.co/admin/posts">http://gesccol.gov.co/admin/posts</a>
+          o por medio del panel de navegacion <br> <img src="file:///c:\Users\anton\OneDrive\Documentos\DESARROLLO WEB\PROYECTOS WEB\GESCCOL-E.I.C.E\DOCUMENTACION\docs-gesccol-app\docs-cliente\usuario\panel.png" alt="panel"><br>
+          se abrira la pagina con el formulario para crear una noticia
+          <img src="https://i.postimg.cc/0jYf18VB/noticias.png" alt="noticias"> en el campo categoria, se elige entre todas las categorias creadas anterioremente, se llenan los demas campos y se opime publicar, esta noticia se vera reflejada en el listado de noticias
+          <img src="https://i.postimg.cc/s2xwGC2M/noticias-listado.png" alt="noticias-listado">
+          y tambien en el componente usuario en la pagina 👉http://gesccol.gov.co/posts automaticamente.</li>
+          </ul>
+          </li>
+          <li>
+          <h3 id="como-se-crea-un-post-o-noticia"><em><strong>Como se crea un post o noticia</strong></em></h3>
+          <p>los post o noticias son publicaciones que se crean para informar al ciudadano aserca de nuevas novedades.
+          En la barra de navegacion encontraran una opcion llamada crear noticia la cual redirecciona a un formulario con varios campos los cuales se deben llenar, campos como titulo, descripcion de la noticia e imagenes relacionadas a esta, asi al llenar dichos campos procedemos a pinchar el boton crear y este se creara automaticamente, pueden verificar que esté creada corrctamente en la opcion, <strong>listado de noticias</strong>, este nuevo registro tambien se vera reflejado en la pagina de noticias y comunicados en el component usuario.</p>
+          </li>
+          <li>
+          <h3 id="como-se-crea-un-servicio"><em><strong>Como se crea un servicio</strong></em>.</h3>
+          <p>los servicios son los procesos que el usuario puede realizar en la empresa.
+          Para crear un servicio se debe hacer el mismo procedimiento que se hizo con las noticias, solo que en este no existe el campo de las imagenes.</p>
+          </li>
+          <li>
+          <h3 id="como-se-crea-una-contratacion-y-una-orden"><em><strong>Como se crea una contratacion y una orden</strong></em>.</h3>
+          <p>Las contrataciones y Ordenes son registros que la empresa lleva para garantizar la transparencias de los recursos bienes y asociados.
+          Para crear dichos registros se debe llenar los campos en el formulario, todos los campos son obligatorios, no se debe dejar ninguno vacios, asi que se tiene que verificar que el registro proporcionado por el directivo contenga los campos acordados.</p>
+          </li>
+          <li>
+          <h3 id="como-se-crea-una-palabra-clave"><em><strong>como se crea-una palabra clave</strong></em></h3>
+          <p>Las palabras claves no son mas que conceptos relacionados con catastro, para hacerlo se sigue el mismo procedimiento que en los demas registros</p>
+          </li>
+          <li>
+          <h3 id="como-puedo-cambiar-la-imagen-de-una-noticia"><em><strong>Como puedo cambiar la imagen de una noticia</strong></em></h3>
+          <p>Para editar un registro ya creado se debe posicionar sobre la seccion de Noticias/post en la tabla en donde se listan todos los registros.</p>
+          <p><img src="https://i.postimg.cc/XqS8PZk5/registro-noticias.png" alt="registro-noticias">
+          Y oprimir el boton editar, esto lo llevara a un formulario en donde vera todos los campos del post en espesifico
+          <img src="https://i.postimg.cc/bNPgHtJc/post-1.png" alt="screen-post">
+          <img src="https://i.postimg.cc/XqS8PZk5/registro-noticias.png" alt="screen-post-2"></p>
+          <p>Como se aprecia los campos estan llenos, pero son el contenido que tiene el post en espesifico, asi que si quiere editar alguno solo debe borrar y cambiar lo que este mal o lo que necesite agregar.
+          Para cambiar la imagene es muy sencillo, solo pinche en el boton <em>chose File</em>, se le abrirar el administrador de archivos para elejir su imagen y listo, procede a <em>actualizar publicacion</em> y si todo esta correcto el registro se actualizara, puede ir a verlo en la pagina 👉 <a href="https://gesccol.gov.co/posts">https://gesccol.gov.co/posts</a></p>
+          </li>
+          </ul>
+          <h1 id="conclusiones">Conclusiones</h1>
+          <p>Basicamente es muy sencillo administrar todos los registros de la aplicacion web, eventualmente mas adelante se iran implementando mas secciones, tablas, funcionalidades y esta documentacion se va a ir actualizando a medida que eso suceda, cabe resaltar que si se requiere hacer un paso mas tecnico como agregar un nuevo campo a alguna de las tablas, se debe ya consultar la documentacion tecnica, esta servira para que los desarrolladores encargados de la implementacion de nuevas funcionalidades en la aplicacion puedan guiarse en el proyecto e implementar mas cosas en ella, la documentacion tecnica tambien se ira actualizando para poder garantizar mejor entendimiento de la aplicacion web.</p>
+          <h1 id="documentacion-tecnica">Documentacion tecnica</h1>
+          <h3 id="link-para-documentacion-tecnica--httpsgithubcomantonio-code2docs-gesccol-apptreemaindocs-tecnica">Link para documentacion tecnica 👉 <a href="https://github.com/Antonio-code2/docs-gesccol-app/tree/main/docs-tecnica">https://github.com/Antonio-code2/docs-gesccol-app/tree/main/docs-tecnica</a></h3>
+          <h1 id="contacto">Contacto</h1>
+          <p>Para mayor informacion comunicarse a <a href="mailto:antonimcs21@hotmail.com">antonimcs21@hotmail.com</a></p>
+        </section>
+
+          <script src="../../../public/js/docs.js"></script>
+    </body>
+    </html>

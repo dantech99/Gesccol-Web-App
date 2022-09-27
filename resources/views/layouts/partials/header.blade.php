@@ -1,7 +1,7 @@
 {{-- barra gov --}}
 <div class="container-xl flex justify-between  h-10 bg-[#3366CC]">
    <div class="container flex m-auto h-full">
-    <img class=" w-auto my-2" src="{{ asset('images/logo.png') }}" alt="">
+      <img class=" w-auto my-2" src="{{ asset('images/logo.png') }}" alt="">
    </div>
    
    <div class="m-auto flex">
