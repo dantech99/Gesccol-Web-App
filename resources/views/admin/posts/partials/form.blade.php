@@ -63,4 +63,22 @@
 		@error('content')
 		<small class="text-danger">{{$message}}</small>
 		@enderror
-	</div>
+</div>
+
+<div class="form-group">
+	<p class="font-weight-bold">Estado del Post</p>
+	<label>
+		{!! Form::radio('status', 'publicado') !!}
+		Publicado
+	</label><br>
+
+	<label>
+		{!! Form::radio('status', 'borrador') !!}
+		borrador
+	</label>
+	@error('status')
+		<br>
+		<small class="text-danger">{{$message}}</small>
+	@enderror
+</div>
+

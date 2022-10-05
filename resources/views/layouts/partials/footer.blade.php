@@ -7,7 +7,6 @@
             <div>
                 <strong>Horarios de Atencion</strong>
                 <p>Lunes a viernes 8:00 am - 12:00 pm </p>
-                <p>2:00 pm - 5:00 pm</p>
                 <br>
                 <strong>Direccion</strong>
                 <p>Terminal de Transportes local 1-4</p>

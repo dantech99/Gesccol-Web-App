@@ -84,7 +84,8 @@
 
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3 py-6 h-full">
         @foreach ($posts as $post)
-       <article >
+       @if ($post->status == 'publicado')
+          <article >
             <div class="w-full h-60 overflow-hidden">
                 @if ($post->image)
                     <img src="{{Storage::url($post->image->url)}}" alt="gesccol-imagenes" class="h-full w-full object-cover">
@@ -102,7 +103,12 @@
                 {!!Str::limit($post->content, 200)!!}
             </div>
             <p class="p-3 text-gray-500">{{$post->author}}</p>
-       </article>
+       </article> 
+       @else
+           <div class="container text-center">
+            <h1 class=" text-2xl">No hay Publicaciones que mostrar</h1>
+           </div>
+       @endif
        @endforeach
     </div>
 
