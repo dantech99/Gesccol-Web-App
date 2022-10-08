@@ -4,9 +4,9 @@
 
 @section('content_header')
 
-    <a href="{{route('admin.contratos.create')}}" class="btn btn-secondary float-right">Nueva Contratacion</a>
+    <a href="{{route('admin.contratos.create')}}" class="btn btn-secondary float-right">Nueva Registro</a>
 
-    <h1>Listado de Contrataciones</h1>
+    <h1>Listado de Tramites</h1>
 @stop
 
 @section('content')
@@ -18,12 +18,9 @@
         </x-adminlte-alert>
     @endif
 
-    @livewire('admin.contract-list')
+    @livewire('admin.report-list')
 @stop
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
-    <style type="text/css">
-        <textarea name=""></textarea>
-    </style>
 @stop

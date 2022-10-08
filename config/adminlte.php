@@ -358,6 +358,15 @@ return [
             'icon' => 'fas fa-shopping-bag',
             'route' => 'admin.ordenes.create',
         ],
+        
+        ['header' => 'REPORTES'],
+        [
+            'text' => 'Listado de Reportes',
+            'icon' => 'fas fa-shopping-bag',
+            'route' => 'admin.reportes.index',
+        
+        ],
+
         ['header' => 'ADICIONALES'],
         ['header' => 'Glosarios'],
         [
