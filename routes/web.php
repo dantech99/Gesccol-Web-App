@@ -6,6 +6,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ContractController;
 use App\Http\Controllers\GlosaryController;
+use App\Http\Controllers\ReportController;
 
 use Illuminate\Support\Facades\Route;
 use App\Mail\ContactanosMailable;
@@ -94,6 +95,9 @@ Route::controller(ServiceController::class)->group(function(){
     //ruta para ver un servicio
     Route::get('servicios/{service:slug}', 'show')->name('servicios.show');
 });
+
+//rutas para las vistas de informes/reportes
+Route::get('reportes',  [ReportController::class, 'index'])->name('reportes.index');
 
 
 

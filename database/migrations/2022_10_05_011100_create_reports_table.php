@@ -15,6 +15,13 @@ return new class extends Migration
     {
         Schema::create('reports', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('n_radicado');
+            $table->text('tipo_mutacion');
+
+            $table->enum('status', ['completo', 'incompleto'])->default('completo');
+
+            $table->text('notificacion');
+            $table->text('observaciones');                                                  
             $table->timestamps();
         });
     }
