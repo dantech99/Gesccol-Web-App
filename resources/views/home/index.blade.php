@@ -68,6 +68,15 @@
                 <h1 class="m-auto mt-2 text-lg">Normativas y Legalidades</h1>
             </div>
         </a>
+
+        <a href="{{Route('reportes.index')}}">
+            <div class="w-full  h-auto m-1 flex flex-col p-9 bg-blue-200 rounded-md">
+                <div class="rounded-full w-auto p-4 m-auto bg-white border-4 border-blue-600">
+                    <ion-icon name="browsers"></ion-icon>
+                </div>
+                <h1 class="m-auto mt-2 text-2xl text-red-500 font-medium ">Reportes Catastrales</h1>
+            </div>
+        </a>
     </div>
 </div>
 

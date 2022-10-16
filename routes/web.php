@@ -99,6 +99,10 @@ Route::controller(ServiceController::class)->group(function(){
 //rutas para las vistas de informes/reportes
 Route::get('reportes',  [ReportController::class, 'index'])->name('reportes.index');
 
+Route::controller(ReportController::class)->group(function(){
+    Route::get('reportes', 'index')->name('reportes.index');
+});
+
 
 
 
