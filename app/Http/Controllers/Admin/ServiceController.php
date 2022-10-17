@@ -29,11 +29,6 @@ class ServiceController extends Controller
     }
 
    
-    public function show(Service $service)
-    {
-        //
-    }
-
   
     public function edit(Service $service)
     {
@@ -53,6 +48,6 @@ class ServiceController extends Controller
     public function destroy(Service $service)
     {
         $service->delete();
-        return redirect()->route('admin.servicios.index')->with('info', 'servicio creado con exito');
+        return redirect()->route('admin.servicios.index')->with('info', 'servicio eliminado con exito');
     }
 }

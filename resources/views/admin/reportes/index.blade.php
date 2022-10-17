@@ -1,10 +1,10 @@
 @extends('adminlte::page')
 
-@section('title', 'Contrataciones | Gesccol')
+@section('title', 'Reportes | Gesccol')
 
 @section('content_header')
 
-    <a href="{{route('admin.contratos.create')}}" class="btn btn-secondary float-right">Nueva Registro</a>
+    <a href="{{route('admin.reportes.create')}}" class="btn btn-secondary float-right">Nueva Registro</a>
 
     <h1>Listado de Tramites</h1>
 @stop

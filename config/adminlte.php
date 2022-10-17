@@ -362,9 +362,14 @@ return [
         ['header' => 'REPORTES'],
         [
             'text' => 'Listado de Reportes',
-            'icon' => 'fas fa-shopping-bag',
+            'icon' => 'fas fa-table',
             'route' => 'admin.reportes.index',
         
+        ],
+        [
+            'text' => 'Crear Reporte',
+            'icon' => 'fas fa-table',
+            'route' => 'admin.reportes.create',
         ],
 
         ['header' => 'ADICIONALES'],
