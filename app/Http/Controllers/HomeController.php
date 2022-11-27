@@ -80,4 +80,8 @@ class HomeController extends Controller
         return view('home.normativas');
     }
 
+    public function difusion(){
+        return view('home.difusion');
+    }
+
 }

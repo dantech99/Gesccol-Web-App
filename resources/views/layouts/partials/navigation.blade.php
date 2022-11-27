@@ -2,16 +2,18 @@
   <div class="mx-auto container  px-6 py-2 xl:py-0">
       <div class="flex items-center justify-center">
           <div class="flex">
-              <div class="hidden xl:flex md:mr-8 xl:mr-16 text-white">
-                  <a href="/" class="{{request()->routeIs('home.index') ? 'active' : ''}}  border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out">Inicio</a>
+              <div class="hidden xl:flex md:mr-8 xl:mr-16 text-white text-base">
+                  <a href="/" class="{{request()->routeIs('home.index') ? 'active' : ''}}  border-b-2 border-transparent  flex px-5 items-center py-6  leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out">Inicio</a>
 
-                  <a href="{{Route('servicios.index')}}" class="{{request()->routeIs('servicios.index') ? 'active' : ''}}  border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out">Tramites y Servicios</a>
+                  <a href="{{Route('servicios.index')}}" class="{{request()->routeIs('servicios.index') ? 'active' : ''}}  border-b-2 border-transparent  flex px-5 items-center py-6  leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out">Tramites y Servicios</a>
 
                   <a href="{{Route('posts.index')}}" class="{{request()->routeIs('posts.index') ? 'active' : ''}}  border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out"> Noticias y Comunicados</a>
 
-                  <a href="{{Route('home.atencion')}}" class="{{request()->routeIs('home.atencion') ? 'active' : ''}}  border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out">Atencion al Ciudadano</a>
+                  {{-- <a href=""  class="border-b-2 border-transparent  flex px-5 items-center py-6 leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out">Transparencia | informacion Publica</a> --}}
 
-                 <a href="{{Route('home.somos')}}" class="{{request()->routeIs('home.somos') ? 'active' : ''}}  border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out">¿Quienes Somos?</a>
+                  <a href="{{Route('home.atencion')}}" class="{{request()->routeIs('home.atencion') ? 'active' : ''}}  border-b-2 border-transparent  flex px-5 items-center py-6 leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out">Atencion al Ciudadano</a>
+
+                 <a href="{{Route('home.somos')}}" class="{{request()->routeIs('home.somos') ? 'active' : ''}}  border-b-2 border-transparent  flex px-5 items-center py-6 leading-5  hover:bg-[#85a133]   focus:bg-[#85a133] focus:outline-none transition duration-150 ease-in-out">¿Quienes Somos?</a>
                {{--  <a href="{{Route('contratos.index')}}" class="focus:text-indigo-700 border-b-2 border-transparent  flex px-5 items-center py-6 text-lg leading-5   hover:bg-[#85a133] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                       
                    <p class="{{request()->routeIs('contratos.index') ? 'active' : ''}}">Contrataciones</p>

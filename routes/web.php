@@ -51,7 +51,7 @@ Route::controller(HomeController::class)->group(function () {
     //normativas y legalidades
     Route::get('normativas', 'regulations')->name('home.regulations');
 
-
+    Route::get('difusion-catastral', 'difusion')->name('home.difusion');
 
 });
 

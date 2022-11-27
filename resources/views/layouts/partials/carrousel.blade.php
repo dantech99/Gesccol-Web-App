@@ -4,10 +4,10 @@
     <div class="overflow-hidden relative h-56 rounded-lg md:h-[36rem]">
 
          <!-- Item 1 -->
-        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="">
+        {{-- <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="">
             <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
             <img src="{{asset('images/infogesccol.png')}}" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 h-full object-cover" alt="...">
-        </div>
+        </div> --}}
         <!-- Item 2 -->
 
         <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
@@ -22,7 +22,7 @@
 
     <!-- Slider indicators -->
     <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-        <button type="button" class="w-3 h-3 rounded-full bg-black dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        {{-- <button type="button" class="w-3 h-3 rounded-full bg-black dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button> --}}
         <button type="button" class="w-3 h-3 rounded-full bg-black dark:bg-gray-800/50 hover:bg-gray dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
         <button type="button" class="w-3 h-3 rounded-full bg-black dark:bg-gray-800/50 hover:bg-gray dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
     </div>

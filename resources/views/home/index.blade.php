@@ -18,7 +18,7 @@
         <div class="w-full h-auto p-6 col-span-2">
             <h1 class=" text-5xl font-bold text-[#2299AA]">Gesccol</h1>
             <h2 class="text-2xl font-bold text-[#2299AA]">E.I.C.E</h2>
-            <h4 class="text-lg text-[#2299AA]">Somos el gestor catastral, habilitado por el IGAC, para realizar las actividades de formación, actualización y conservación catastral, en el municipio de Sahagún – Córdoba.
+            <h4 class="text-lg text-[#2299AA]">Somos la empresa encargarda de realizar las actividades de formación, actualización, conservación y difusión catastral, en el municipio de Sahagún
             La gestión catastral es un servicio público desarrollado a través de los procesos de formación, actualización, conservación y difusión de la información física, jurídica y económica de los predios, para una mejor administración de los territorios.</h4>
         </div>
        
@@ -69,12 +69,12 @@
             </div>
         </a>
 
-        <a href="{{Route('reportes.index')}}">
+        <a href="{{Route('home.difusion')}}">
             <div class="w-full  h-auto m-1 flex flex-col p-9 bg-blue-200 rounded-md">
                 <div class="rounded-full w-auto p-4 m-auto bg-white border-4 border-blue-600">
-                    <ion-icon name="browsers"></ion-icon>
+                    <ion-icon name="locate" class="interes"></ion-icon>
                 </div>
-                <h1 class="m-auto mt-2 text-2xl text-red-500 font-medium ">Reportes Catastrales</h1>
+                <h1 class="m-auto mt-2 text-2xl text-black font-medium ">Difusion Catastral</h1>
             </div>
         </a>
     </div>
