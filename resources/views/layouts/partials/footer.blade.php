@@ -6,7 +6,7 @@
         <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 w-auto h-auto  mx-10 pb-10 ">
             <div>
                 <strong>Horarios de Atencion</strong>
-                <p>Lunes a viernes 8:00 am - 12:00 pm </p>
+                <p>Lunes a viernes 8:00 am - 05:00 pm </p>
                 <br>
                 <strong>Direccion</strong>
                 <p>Terminal de Transportes local 1-4</p>
@@ -17,7 +17,7 @@
                 <p>info@gesccol.gov.co</p>
                 <br>
                 <strong>Telefono</strong>
-                <p>Muy Pronto</p>
+                <p>3155547419</p>
             </div>
             <div>
                 <strong>Gestion Catastral de Colombia</strong>
