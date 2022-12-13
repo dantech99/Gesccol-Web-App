@@ -7,6 +7,8 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ContractController;
 use App\Http\Controllers\GlosaryController;
 use App\Http\Controllers\ReportController;
+use App\Http\Controllers\NotificationController;
+
 
 use Illuminate\Support\Facades\Route;
 use App\Mail\ContactanosMailable;
@@ -105,7 +107,10 @@ Route::controller(ReportController::class)->group(function(){
 
 
 
-
+// rutas para las vistas del componente notificaciones
+Route::controller(NotificationController::class)->group(function(){
+    Route::get('notificaciones', 'index')->name('notificaciones.index');
+});
 
 
 
