@@ -74,4 +74,8 @@ class User extends Authenticatable
     public function glosarys(){
         return $this->hasMany(Glosary::class);
     }
+
+    public function notification(){
+        return $this->hasMany(Notification::class);
+    }
 }
