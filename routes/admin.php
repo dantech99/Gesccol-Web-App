@@ -9,6 +9,8 @@ use App\Http\Controllers\admin\ContractController;
 use App\Http\Controllers\admin\OrderController;
 use App\Http\Controllers\admin\GlosaryController;
 use App\Http\Controllers\admin\ReportController;
+use App\Http\Controllers\admin\NotificationController;
+
 
 
 
@@ -29,4 +31,6 @@ Route::resource('orders', OrderController::class)->names('admin.ordenes');
 Route::resource('glosario', GlosaryController::class)->names('admin.glosario');
 
 Route::resource('reportes', ReportController::class)->names('admin.reportes');
+
+Route::resource('notification', NotificationController::class)->names('admin.notificaciones');
 

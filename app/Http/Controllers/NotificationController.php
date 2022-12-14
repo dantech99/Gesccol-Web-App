@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Notification;
+
 use Illuminate\Http\Request;
 
 class NotificationController extends Controller
@@ -14,7 +15,8 @@ class NotificationController extends Controller
      */
     public function index()
     {
-        return view('notificaciones.index');
+        $notifications = Notification::paginate(10);
+        return view('notificaciones.index', compact('notifications'));
     }
 
     /**
@@ -22,10 +24,10 @@ class NotificationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
+    // public function create()
+    // {
+        
+    // }
 
     /**
      * Store a newly created resource in storage.
@@ -33,10 +35,10 @@ class NotificationController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
+    // public function store(Request $request)
+    // {
+        
+    // }
 
     /**
      * Display the specified resource.
@@ -44,10 +46,10 @@ class NotificationController extends Controller
      * @param  \App\Models\Notification  $notification
      * @return \Illuminate\Http\Response
      */
-    public function show(Notification $notification)
-    {
-        //
-    }
+    // public function show(Notification $notification)
+    // {
+        
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -55,10 +57,10 @@ class NotificationController extends Controller
      * @param  \App\Models\Notification  $notification
      * @return \Illuminate\Http\Response
      */
-    public function edit(Notification $notification)
-    {
-        //
-    }
+    // public function edit(Notification $notification)
+    // {
+        
+    // }
 
     /**
      * Update the specified resource in storage.
@@ -67,10 +69,10 @@ class NotificationController extends Controller
      * @param  \App\Models\Notification  $notification
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Notification $notification)
-    {
-        //
-    }
+    // public function update(Request $request, Notification $notification)
+    // {
+        
+    // }
 
     /**
      * Remove the specified resource from storage.
@@ -78,8 +80,8 @@ class NotificationController extends Controller
      * @param  \App\Models\Notification  $notification
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Notification $notification)
-    {
-        //
-    }
+    // public function destroy(Notification $notification)
+    // {
+        
+    // }
 }

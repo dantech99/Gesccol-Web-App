@@ -366,10 +366,25 @@ return [
             'route' => 'admin.reportes.index',
         
         ],
+       
         [
             'text' => 'Crear Reporte',
             'icon' => 'fas fa-table',
             'route' => 'admin.reportes.create',
+        ],
+
+        ['header' => 'NOTIFICACIONES'],
+        [
+            'text' => 'Listado de Notificaciones',
+            'icon' => 'fa fa-bell',
+            'route' => 'admin.notificaciones.index',
+        
+        ],
+        [
+            'text' => 'Crear Notificacion',
+            'icon' => 'fa fa-bell',
+            'route' => 'admin.notificaciones.create',
+        
         ],
 
         ['header' => 'ADICIONALES'],
