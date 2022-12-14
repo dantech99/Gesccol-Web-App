@@ -56,7 +56,7 @@ class ContractController extends Controller
         $contract->update($request->all());
 
         if ($request->file('files')) {
-            $url = Storage::put('posts', $request->file('file'));
+            $url = Storage::put('documents', $request->file('file'));
 
             if ($contract->files) {
                 Storage::delete($contract->files->url);

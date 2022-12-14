@@ -14,7 +14,7 @@ class Notification extends Model
         return $this->belongsTo(User::class);
     }
 
-    // public function files(){
-    //     return $this->morphOne(FileNotify::class, 'filelable');
-    // }
+    public function files(){
+        return $this->morphOne(Filenotify::class, 'filelable');
+    }
 }

@@ -4,7 +4,7 @@
 
 @section('content_header')
 
-    <a href="{{route('admin.contratos.create')}}" class="btn btn-secondary float-right">Nueva Notificacion</a>
+    <a href="{{route('admin.notificaciones.create')}}" class="btn btn-secondary float-right">Nueva Notificacion</a>
 
     <h1>Listado de Notificaciones</h1>
 @stop
@@ -18,7 +18,7 @@
         </x-adminlte-alert>
     @endif
 
-    @livewire('')
+    @livewire('admin.notify-list')
 @stop
 
 @section('css')
