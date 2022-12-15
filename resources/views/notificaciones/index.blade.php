@@ -20,12 +20,27 @@
             @foreach ($notifications as $notify)
             <div class="card w-full h-24 border flex justify-between items-center p-5">
                 <div class="container flex flex-row items-center">
-                    <ion-icon name="notifications-outline"></ion-icon>
-                    <h1 class="text-2xl">{{$notify->title}}</h1>
+                    <box-icon type='solid' name='bell' size="lg" color="blue"></box-icon>
+                    <div class="flex flex-col">
+                        <h1 class="text-2xl">{{$notify->title}}</h1>
+                        <p>{{$notify->created_at->format('Y-m-d')}}</p>
+                    </div>
+                    
                 </div>
+              {{--   <div class="container flex items-center">
+                    <p>{!! $notify->description !!}</p>
+                </div> --}}
                 <div class="container flex flex-row items-center justify-end">
-                    <a href={{$notify->link}}><ion-icon name="open"></ion-icon></a>
-                    <a href=""><ion-icon name="link"></ion-icon></a>
+                    <div class="flex flex-col text-center">
+                        <a href="{{$notify->link}}" target="_blank"><box-icon name='link-external' size="md" color="blue"></box-icon></a>
+                        <p>Abrir</p>
+                    </div>
+                    
+                    <div class="flex flex-col ml-5 text-center">
+                        <a href="{{Storage::url($notify->files->url)}}"><box-icon name='download' size="md" color="blue"></box-icon></a>
+                        <p>Descargar</p>
+                    </div>
+                    
                 </div>
             </div>
             @endforeach
