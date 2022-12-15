@@ -29,9 +29,9 @@
           <div class="px-2 py-2 bg-[#3366CC]  shadow text-white text-base">
             <a class="block px-4 py-4 mt-2 font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-[#85a133] focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="{{route('posts.index')}}">Noticias</a>
 
-            <a class="block px-4 py-4 mt-2 font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-[#85a133] focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="">Comunicados</a>
+            <a class="block px-4 py-4 mt-2 font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-[#85a133] focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="https://gesccol.gov.co/category/comunicados">Comunicados</a>
 
-            <a class="block px-4 py-4 mt-2 font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-[#85a133] focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="">Informes</a>
+            <a class="block px-4 py-4 mt-2 font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-[#85a133] focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="https://gesccol.gov.co/category/informes">Informes</a>
 
             <a class="block px-4 py-4 mt-2 font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-[#85a133] focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="{{route('notificaciones.index')}}">Notificaciones</a>
         
