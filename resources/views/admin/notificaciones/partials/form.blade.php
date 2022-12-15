@@ -9,12 +9,13 @@
 
 <div class="form-group">
 	{!! Form::label('description', 'descripcion') !!}
-	{!! Form::text('description', null,['class' => 'form-control', 'placeholder' => 'ingrese una descripcion']) !!}
+	{!! Form::textarea('description', null,['class' => 'form-control', 'placeholder' => 'ingrese una descripcion']) !!}
 
 	@error('description')
 	<small class="text-danger">{{$message}}</small>
 	@enderror
 </div>
+
 
 <div class="form-group">
     <p class="font-weight-bold">Estado</p>
