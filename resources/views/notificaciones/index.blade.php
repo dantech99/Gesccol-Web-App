@@ -21,9 +21,9 @@
             <div class="card w-full h-24 border flex justify-between items-center p-5">
                 <div class="container flex flex-row items-center">
                     <box-icon type='solid' name='bell' size="lg" color="blue"></box-icon>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col ml-2">
                         <h1 class="text-2xl">{{$notify->title}}</h1>
-                        <p>{{$notify->created_at->format('Y-m-d')}}</p>
+                        <p>Fecha de Publicacion: {{$notify->created_at->format('Y-m-d')}}</p>
                     </div>
                     
                 </div>
