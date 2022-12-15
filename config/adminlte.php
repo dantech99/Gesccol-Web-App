@@ -299,105 +299,143 @@ return [
         //         ],
         //     ],
         // ],
-        ['header' => 'CATEGORIAS'],
         [
-            'text'   => 'Listado Categorias',
-            'route' => 'admin.categorias.index',
-            'icon' => 'fas fa-tags',
-        ],
-        [
-            'text'       => 'Crear Categorias',
-            'route'        => 'admin.categorias.create',
-            'icon' => 'fas fa-tag',
+            'text' => 'CATEGORIAS',
+            'icon'    => 'fas fa-tags',
+            'submenu' => [
+                [
+                    'text'   => 'Listado Categorias',
+                    'route' => 'admin.categorias.index',
+                    'icon' => 'fas fa-tags',
+                ],
+                [
+                    'text'       => 'Crear Categorias',
+                    'route'        => 'admin.categorias.create',
+                    'icon' => 'fas fa-tag',
+                ],
+            ],
         ],
         
 
 
-        ['header' => 'NOTICIAS/COMUNICADOS'],
         [
-            'text' => 'Lista de Noticias',
+            'text' => 'NOTICIAS/COMUNICADOS',
             'icon' => 'fas fa-book',
-            'route' => 'admin.posts.index',
+            'submenu' =>[
+                [
+                    'text' => 'Lista de Noticias',
+                    'icon' => 'fas fa-book',
+                    'route' => 'admin.posts.index',
+                ],
+
+                [
+                    'text' => 'Crear Noticia',
+                    'icon' => 'fas fa-book-medical',
+                    'route' => 'admin.posts.create',
+                ],
+            ],
         ],
 
         [
-            'text' => 'Crear Noticia',
-            'icon' => 'fas fa-book-medical',
-            'route' => 'admin.posts.create',
+            'text' => 'SERVICIOS',
+            'icon' => 'fas fa-book-open',
+            'submenu' =>[
+                [
+                    'text' => 'Lista de Servicios',
+                    'icon' => 'fas fa-book-open',
+                    'route' => 'admin.servicios.index',
+                ],
+                [
+                    'text' => 'Crear Servicio',
+                    'icon' => 'fas fa-book-open',
+                    'route' => 'admin.servicios.create',
+                ],
+            ],
         ],
 
-        ['header' => 'SERVICIOS'],
-        [
-            'text' => 'Lista de Servicios',
-            'icon' => 'fas fa-book-open',
-            'route' => 'admin.servicios.index',
-        ],
-        [
-            'text' => 'Crear Servicio',
-            'icon' => 'fas fa-book-open',
-            'route' => 'admin.servicios.create',
-        ],
-         ['header' => 'CONTRATOS'],
-        [
-            'text' => 'Lista de contratos',
+         ['header' => 'PROCESOS Y PUBLICACIONES'],
+
+         [
+            'text' => 'CONTRATOS Y ORDENES',
             'icon' => 'fas fa-file-signature',
-            'route' => 'admin.contratos.index',
-        ],
-        [
-            'text' => 'Crear Contrato',
-            'icon' => 'fas fa-file-signature',
-            'route' => 'admin.contratos.create',
-        ],
-        [
-            'text' => 'Listado de Ordenes',
-            'icon' => 'fas fa-shopping-bag',
-            'route' => 'admin.ordenes.index',
-        ],
-        [
-            'text' => 'Crear Orden',
-            'icon' => 'fas fa-shopping-bag',
-            'route' => 'admin.ordenes.create',
+            'submenu' =>[
+                [
+                    'text' => 'Lista de contratos',
+                    'icon' => 'fas fa-file-signature',
+                    'route' => 'admin.contratos.index',
+                ],
+                [
+                    'text' => 'Crear Contrato',
+                    'icon' => 'fas fa-file-signature',
+                    'route' => 'admin.contratos.create',
+                ],
+                [
+                    'text' => 'Listado de Ordenes',
+                    'icon' => 'fas fa-shopping-bag',
+                    'route' => 'admin.ordenes.index',
+                ],
+                [
+                    'text' => 'Crear Orden',
+                    'icon' => 'fas fa-shopping-bag',
+                    'route' => 'admin.ordenes.create',
+                ],
+            ],
         ],
         
-        ['header' => 'REPORTES'],
         [
-            'text' => 'Listado de Reportes',
+            'text' => 'REPORTES',
             'icon' => 'fas fa-table',
-            'route' => 'admin.reportes.index',
-        
-        ],
+            'submenu' =>[
+                [
+                    'text' => 'Listado de Reportes',
+                    'icon' => 'fas fa-table',
+                    'route' => 'admin.reportes.index',
+                
+                ],
        
-        [
-            'text' => 'Crear Reporte',
-            'icon' => 'fas fa-table',
-            'route' => 'admin.reportes.create',
+                [
+                    'text' => 'Crear Reporte',
+                    'icon' => 'fas fa-table',
+                    'route' => 'admin.reportes.create',
+                ],
+            ],
         ],
 
-        ['header' => 'NOTIFICACIONES'],
         [
-            'text' => 'Listado de Notificaciones',
+            'text' => 'NOTIFICACIONES',
             'icon' => 'fa fa-bell',
-            'route' => 'admin.notificaciones.index',
-        
-        ],
-        [
-            'text' => 'Crear Notificacion',
-            'icon' => 'fa fa-bell',
-            'route' => 'admin.notificaciones.create',
-        
+            'submenu' => [
+                [
+                    'text' => 'Listado de Notificaciones',
+                    'icon' => 'fa fa-bell',
+                    'route' => 'admin.notificaciones.index',
+                
+                ],
+                [
+                    'text' => 'Crear Notificacion',
+                    'icon' => 'fa fa-bell',
+                    'route' => 'admin.notificaciones.create',
+                
+                ],
+            ],
         ],
 
-        ['header' => 'ADICIONALES'],
-        ['header' => 'Glosarios'],
+        ['header' => 'INFORMACION'],
         [
-            'text' => 'Listado de palabras',
+            'text' => 'Glosarios',
             'icon' => 'fas fa-atlas',
-            'route' => 'admin.glosario.index',
-        ],
-        [
-            'text' => 'Agregar palabras o terminos claves',
-            'icon' => 'fas fa-atlas',
-            'route' => 'admin.glosario.create',
+            'submenu' => [
+                [
+                    'text' => 'Listado de palabras',
+                    'icon' => 'fas fa-atlas',
+                    'route' => 'admin.glosario.index',
+                ],
+                [
+                    'text' => 'Agregar palabras o terminos claves',
+                    'icon' => 'fas fa-atlas',
+                    'route' => 'admin.glosario.create',
+                ],
+            ],
         ],
 
 
