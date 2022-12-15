@@ -40,7 +40,26 @@
                 <div class="rounded-full w-auto p-4 m-auto bg-white border-4 border-blue-600">
                     <ion-icon name="filing" class="interes"></ion-icon>
                 </div>
-                <h1 class="m-auto mt-2 text-lg">Guia de tramites y servicios</h1>
+                <h1 class="m-auto mt-2 text-lg">Consulta Tramites y Servicios</h1>
+            </div>
+        </a>
+
+        
+        <a href="{{Route('home.difusion')}}">
+            <div class="w-full  h-auto m-1 flex flex-col p-9 ">
+                <div class="rounded-full w-auto p-4 m-auto bg-white border-4 border-blue-600">
+                    <ion-icon name="locate" class="interes"></ion-icon>
+                </div>
+                <h1 class="m-auto mt-2 text-lg">Observatorios</h1>
+            </div>
+        </a>
+
+        <a href="{{Route('home.regulations')}}">
+            <div class="w-full  h-auto m-1 flex flex-col p-9 ">
+                <div class="rounded-full w-auto p-4 m-auto bg-white border-4 border-blue-600">
+                    <ion-icon name="warning" class="interes"></ion-icon>
+                </div>
+                <h1 class="m-auto mt-2 text-lg">Normativas y Legalidades</h1>
             </div>
         </a>
 
@@ -60,14 +79,6 @@
                 <h1 class="m-auto mt-2 text-lg">Preguntas Frecuentes</h1>
             </div>
         </a> --}}
-        <a href="{{Route('home.regulations')}}">
-            <div class="w-full  h-auto m-1 flex flex-col p-9 ">
-                <div class="rounded-full w-auto p-4 m-auto bg-white border-4 border-blue-600">
-                    <ion-icon name="warning" class="interes"></ion-icon>
-                </div>
-                <h1 class="m-auto mt-2 text-lg">Normativas y Legalidades</h1>
-            </div>
-        </a>
     </div>
 </div>
 

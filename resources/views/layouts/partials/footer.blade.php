@@ -15,6 +15,8 @@
             <div>
                 <strong>Correo Electronico</strong>
                 <p>info@gesccol.gov.co</p>
+                <p>gesccolsas@gmail.com</p>
+                <p><a href="{{Route('home.atencion')}}">atencion al ciudadano</a></p>
                 <br>
                 <strong>Telefono</strong>
                 <p>3155547419</p>
@@ -24,6 +26,9 @@
                 <br>
                 <p>NIT: 901560504-0</p>
                 <p>Sahagún - Cordoba - Colombia</p>
+                <p><a href="{{Route('home.regulations')}}">Normativas</a></p>
+                <p><a href="{{Route('glosario.index')}}">Glosario</a></p>
+                <p><a href="{{Route('home.administracion')}}">Gesccol</a></p>
                 <p><a href="{{Route('home.politicas')}}">Politicas y Privacidad de los Datos</a> </p>
             </div>
         </div>
