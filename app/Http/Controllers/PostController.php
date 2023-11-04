@@ -16,9 +16,6 @@ class PostController extends Controller
            $posts = Post::latest('id')->paginate(9);
            Cache::put('posts', $posts);
 
-          
-        
-     
         return view('posts.index', compact('posts'));
     }
 
@@ -43,8 +40,5 @@ class PostController extends Controller
         ->paginate(4);
         return view('posts.categorias', compact('posts', 'category'));
     }
-
-
-
 
 }
